@@ -1,0 +1,1866 @@
+SMSA80,,SCMA80,,STATE,COUNTY,,,,msaLABEL
+40,,,,,,,,,"Abilene, TX SMSA"
+40,,,,48,59,,,,Callahan County
+40,,,,48,253,,,,Jones County
+40,,,,48,441,,,,Taylor County
+,,,,,,,,,
+80,,28,,,,,,,"Akron, OH SMSA"
+80,,28,,39,133,,,,Portage County
+80,,28,,39,153,,,,Summit County
+,,,,,,,,,
+120,,,,,,,,,"Albany, GA SMSA"
+120,,,,13,95,,,,Dougherty County
+120,,,,13,177,,,,Lee County
+,,,,,,,,,
+160,,,,,,,,,"Albany-Schenectady-Troy, NY SMSA"
+160,,,,36,1,,,,Albany County
+160,,,,36,57,,,,Montgomery County
+160,,,,36,83,,,,Rensselaer County
+160,,,,36,91,,,,Saratoga County
+160,,,,36,93,,,,Schenectady County
+,,,,,,,,,
+200,,,,,,,,,"Albuquerque, NM SMSA"
+200,,,,35,1,,,,Bernalillo County
+200,,,,35,43,,,,Sandoval County
+,,,,,,,,,
+220,,,,,,,,,"Alexandria, LA SMSA"
+220,,,,22,43,,,,Grant Parish
+220,,,,22,79,,,,Rapides Parish
+,,,,,,,,,
+240,,,,,,,,,"Allentown-Bethlehem, PA-NJ SMSA"
+240,,,,34,41,,,,"Warren County, NJ"
+240,,,,42,25,,,,"Carbon County, PA"
+240,,,,42,77,,,,"Lehigh County, PA"
+240,,,,42,95,,,,"Northampton County, PA"
+,,,,,,,,,
+280,,,,,,,,,"Altoona, PA SMSA"
+280,,,,42,13,,,,Blair County
+,,,,,,,,,
+320,,,,,,,,,"Amarillo, TX SMSA"
+320,,,,48,375,,,,Potter County
+320,,,,48,381,,,,Randall County
+,,,,,,,,,
+360,,49,,,,,,,"Anaheim-Santa Ana-Garden Grove, CA SMSA"
+360,,49,,6,59,,,,Orange County
+,,,,,,,,,
+380,,,,,,,,,"Anchorage, AK SMSA"
+380,,,,2,20,,,,Anchorage Borough
+,,,,,,,,,
+400,,44,,,,,,,"Anderson, IN SMSA"
+400,,44,,18,95,,,,Madison County
+,,,,,,,,,
+405,,,,,,,,,"Anderson, SC SMSA"
+405,,,,45,7,,,,Anderson County
+,,,,,,,,,
+440,,35,,,,,,,"Ann Arbor, MI SMSA"
+440,,35,,26,161,,,,Washtenaw County
+,,,,,,,,,
+450,,,,,,,,,"Anniston, AL SMSA"
+450,,,,1,15,,,,Calhoun County
+,,,,,,,,,
+460,,,,,,,,,"Appleton-Oshkosh, WI SMSA"
+460,,,,55,15,,,,Calumet County
+460,,,,55,87,,,,Outagamie County
+460,,,,55,139,,,,Winnebago County
+,,,,,,,,,
+470,,,,,,,,,"Arecibo, PR SMSA"
+470,,,,72,13,,,,Arecibo Municipio
+470,,,,72,27,,,,Camuy Municipio
+470,,,,72,65,,,,Hatillo Municipio
+,,,,,,,,,
+480,,,,,,,,,"Asheville, NC SMSA"
+480,,,,37,21,,,,Buncombe County
+480,,,,37,115,,,,Madison County
+,,,,,,,,,
+500,,,,,,,,,"Athens, GA SMSA"
+500,,,,13,59,,,,Clarke County
+500,,,,13,157,,,,Jackson County
+500,,,,13,195,,,,Madison County
+500,,,,13,219,,,,Oconee County
+,,,,,,,,,
+520,,,,,,,,,"Atlanta, GA SMSA"
+520,,,,13,35,,,,Butts County
+520,,,,13,57,,,,Cherokee County
+520,,,,13,63,,,,Clayton County
+520,,,,13,67,,,,Cobb County
+520,,,,13,89,,,,De Kalb County
+520,,,,13,97,,,,Douglas County
+520,,,,13,113,,,,Fayette County
+520,,,,13,117,,,,Forsyth County
+520,,,,13,121,,,,Fulton County
+520,,,,13,135,,,,Gwinnett County
+520,,,,13,151,,,,Henry County
+520,,,,13,217,,,,Newton County
+520,,,,13,223,,,,Paulding County
+520,,,,13,247,,,,Rockdale County
+520,,,,13,297,,,,Walton County
+,,,,,,,,,
+560,,,,,,,,,"Atlantic City, NJ SMSA"
+560,,,,34,1,,,,Atlantic County
+,,,,,,,,,
+600,,,,,,,,,"Augusta, GA-SC SMSA"
+600,,,,13,73,,,,"Columbia County, GA"
+600,,,,13,245,,,,"Richmond County, GA"
+600,,,,45,3,,,,"Aiken County, SC"
+,,,,,,,,,
+640,,,,,,,,,"Austin, TX SMSA"
+640,,,,48,209,,,,Hays County
+640,,,,48,453,,,,Travis County
+640,,,,48,491,,,,Williamson County
+,,,,,,,,,
+680,,,,,,,,,"Bakersfield, CA SMSA"
+680,,,,6,29,,,,Kern County
+,,,,,,,,,
+720,,,,,,,,,"Baltimore, MD SMSA"
+720,,,,24,3,,,,Anne Arundel County
+720,,,,24,510,,,,Baltimore city
+720,,,,24,5,,,,Baltimore County
+720,,,,24,13,,,,Carroll County
+720,,,,24,25,,,,Harford County
+720,,,,24,27,,,,Howard County
+,,,,,,,,,
+730,,,,,,,,,"Bangor, ME SMSA"
+730,,,,23,19,,,,Penobscot County (pt.)
+730,,,,23,19,,2795,,Bangor city
+730,,,,23,19,,6925,,Brewer city
+730,,,,23,19,,22535,,Eddington town
+730,,,,23,19,,27645,,Glenburn town
+730,,,,23,19,,30795,,Hampden town
+730,,,,23,19,,32510,,Hermon town
+730,,,,23,19,,33490,,Holden town
+730,,,,23,19,,36325,,Kenduskeag town
+730,,,,23,19,,55225,,Old Town city
+730,,,,23,19,,55540,,Orono town
+730,,,,23,19,,55680,,Orrington town
+730,,,,23,19,,57937,,Penobscot Indian Island Indian Reservation
+730,,,,23,19,,78780,,Veazie town
+730,,,,23,27,,,,Waldo County (pt.)
+730,,,,23,27,,86760,,Winterport town
+,,,,,,,,,
+760,,,,,,,,,"Baton Rouge, LA SMSA"
+760,,,,22,5,,,,Ascension Parish
+760,,,,22,33,,,,East Baton Rouge Parish
+760,,,,22,63,,,,Livingston Parish
+760,,,,22,121,,,,West Baton Rouge Parish
+,,,,,,,,,
+780,,,,,,,,,"Battle Creek, MI SMSA"
+780,,,,26,15,,,,Barry County
+780,,,,26,25,,,,Calhoun County
+,,,,,,,,,
+800,,,,,,,,,"Bay City, MI SMSA"
+800,,,,26,17,,,,Bay County
+,,,,,,,,,
+840,,,,,,,,,"Beaumont-Port Arthur-Orange, TX SMSA"
+840,,,,48,199,,,,Hardin County
+840,,,,48,245,,,,Jefferson County
+840,,,,48,361,,,,Orange County
+,,,,,,,,,
+860,,,,,,,,,"Bellingham, WA SMSA"
+860,,,,53,73,,,,Whatcom County
+,,,,,,,,,
+870,,,,,,,,,"Benton Harbor, MI SMSA"
+870,,,,26,21,,,,Berrien County
+,,,,,,,,,
+880,,,,,,,,,"Billings, MT SMSA"
+880,,,,30,111,,,,Yellowstone County
+,,,,,,,,,
+920,,,,,,,,,"Biloxi-Gulfport, MS SMSA"
+920,,,,28,45,,,,Hancock County
+920,,,,28,47,,,,Harrison County
+920,,,,28,131,,,,Stone County
+,,,,,,,,,
+960,,,,,,,,,"Binghamton, NY-PA SMSA"
+960,,,,36,7,,,,"Broome County, NY"
+960,,,,36,107,,,,"Tioga County, NY"
+960,,,,42,115,,,,"Susquehanna County, PA"
+,,,,,,,,,
+1000,,,,,,,,,"Birmingham, AL SMSA"
+1000,,,,1,73,,,,Jefferson County
+1000,,,,1,115,,,,St. Clair County
+1000,,,,1,117,,,,Shelby County
+1000,,,,1,127,,,,Walker County
+,,,,,,,,,
+1010,,,,,,,,,"Bismarck, ND SMSA"
+1010,,,,38,15,,,,Burleigh County
+1010,,,,38,59,,,,Morton County
+,,,,,,,,,
+1020,,,,,,,,,"Bloomington, IN SMSA"
+1020,,,,18,105,,,,Monroe County
+,,,,,,,,,
+1040,,,,,,,,,"Bloomington-Normal, IL SMSA"
+1040,,,,17,113,,,,McLean County
+,,,,,,,,,
+1080,,,,,,,,,"Boise City, ID SMSA"
+1080,,,,16,1,,,,Ada County
+,,,,,,,,,
+1120,,7,,,,,,,"Boston, MA SMSA"
+1120,,7,,25,9,,,,Essex County (pt.)
+1120,,7,,25,9,,5595,,Beverly city
+1120,,7,,25,9,,7420,,Boxford town
+1120,,7,,25,9,,16250,,Danvers town
+1120,,7,,25,9,,27900,,Hamilton town
+1120,,7,,25,9,,37490,,Lynn city
+1120,,7,,25,9,,37560,,Lynnfield town
+1120,,7,,25,9,,37945,,Manchester town
+1120,,7,,25,9,,38400,,Marblehead town
+1120,,7,,25,9,,41095,,Middleton town
+1120,,7,,25,9,,43580,,Nahant town
+1120,,7,,25,9,,52490,,Peabody city
+1120,,7,,25,9,,59105,,Salem city
+1120,,7,,25,9,,60015,,Saugus town
+1120,,7,,25,9,,68645,,Swampscott town
+1120,,7,,25,9,,70150,,Topsfield town
+1120,,7,,25,9,,74595,,Wenham town
+1120,,7,,25,17,,,,Middlesex County (pt.)
+1120,,7,,25,17,,380,,Acton town
+1120,,7,,25,17,,1605,,Arlington town
+1120,,7,,25,17,,2130,,Ashland town
+1120,,7,,25,17,,4615,,Bedford town
+1120,,7,,25,17,,5070,,Belmont town
+1120,,7,,25,17,,7350,,Boxborough town
+1120,,7,,25,17,,9840,,Burlington town
+1120,,7,,25,17,,11000,,Cambridge city
+1120,,7,,25,17,,11525,,Carlisle town
+1120,,7,,25,17,,15060,,Concord town
+1120,,7,,25,17,,21990,,Everett city
+1120,,7,,25,17,,24925,,Framingham town
+1120,,7,,25,17,,30700,,Holliston town
+1120,,7,,25,17,,35215,,Lexington town
+1120,,7,,25,17,,35425,,Lincoln town
+1120,,7,,25,17,,37875,,Malden city
+1120,,7,,25,17,,39835,,Medford city
+1120,,7,,25,17,,40115,,Melrose city
+1120,,7,,25,17,,43895,,Natick town
+1120,,7,,25,17,,45560,,Newton city
+1120,,7,,25,17,,48955,,North Reading town
+1120,,7,,25,17,,56130,,Reading town
+1120,,7,,25,17,,61380,,Sherborn town
+1120,,7,,25,17,,62535,,Somerville city
+1120,,7,,25,17,,67665,,Stoneham town
+1120,,7,,25,17,,68260,,Sudbury town
+1120,,7,,25,17,,72215,,Wakefield town
+1120,,7,,25,17,,72600,,Waltham city
+1120,,7,,25,17,,73405,,Watertown town
+1120,,7,,25,17,,73790,,Wayland town
+1120,,7,,25,17,,77255,,Weston town
+1120,,7,,25,17,,80230,,Wilmington town
+1120,,7,,25,17,,80510,,Winchester town
+1120,,7,,25,17,,81035,,Woburn city
+1120,,7,,25,21,,,,Norfolk County (pt.)
+1120,,7,,25,21,,4930,,Bellingham town
+1120,,7,,25,21,,7665,,Braintree town
+1120,,7,,25,21,,9175,,Brookline town
+1120,,7,,25,21,,11315,,Canton town
+1120,,7,,25,21,,14640,,Cohasset town
+1120,,7,,25,21,,16495,,Dedham town
+1120,,7,,25,21,,17405,,Dover town
+1120,,7,,25,21,,24820,,Foxborough town
+1120,,7,,25,21,,25065,,Franklin town
+1120,,7,,25,21,,30455,,Holbrook town
+1120,,7,,25,21,,39765,,Medfield town
+1120,,7,,25,21,,39975,,Medway town
+1120,,7,,25,21,,41515,,Millis town
+1120,,7,,25,21,,41690,,Milton town
+1120,,7,,25,21,,44105,,Needham town
+1120,,7,,25,21,,46050,,Norfolk town
+1120,,7,,25,21,,50250,,Norwood town
+1120,,7,,25,21,,55745,,Quincy city
+1120,,7,,25,21,,55955,,Randolph town
+1120,,7,,25,21,,60785,,Sharon town
+1120,,7,,25,21,,67945,,Stoughton town
+1120,,7,,25,21,,72495,,Walpole town
+1120,,7,,25,21,,74175,,Wellesley town
+1120,,7,,25,21,,78690,,Westwood town
+1120,,7,,25,21,,78865,,Weymouth town
+1120,,7,,25,21,,82315,,Wrentham town
+1120,,7,,25,23,,,,Plymouth County (pt.)
+1120,,7,,25,23,,170,,Abington town
+1120,,7,,25,23,,17895,,Duxbury town
+1120,,7,,25,23,,28285,,Hanover town
+1120,,7,,25,23,,28495,,Hanson town
+1120,,7,,25,23,,30210,,Hingham town
+1120,,7,,25,23,,31645,,Hull town
+1120,,7,,25,23,,33220,,Kingston town
+1120,,7,,25,23,,38855,,Marshfield town
+1120,,7,,25,23,,50145,,Norwell town
+1120,,7,,25,23,,52630,,Pembroke town
+1120,,7,,25,23,,57775,,Rockland town
+1120,,7,,25,23,,60330,,Scituate town
+1120,,7,,25,25,,,,Suffolk County
+1120,,7,,25,25,,7000,,Boston city
+1120,,7,,25,25,,13205,,Chelsea city
+1120,,7,,25,25,,56585,,Revere city
+1120,,7,,25,25,,80930,,Winthrop town
+,,,,,,,,,
+1140,,,,,,,,,"Bradenton, FL SMSA"
+1140,,,,12,81,,,,Manatee County
+,,,,,,,,,
+1150,,,,,,,,,"Bremerton, WA SMSA"
+1150,,,,53,35,,,,Kitsap County
+,,,,,,,,,
+1160,,,,,,,,,"Bridgeport-Milford, CT SMSA"
+1160,,,,9,1,,,,Fairfield County (pt.)
+1160,,,,9,1,,8000,,Bridgeport city
+1160,,,,9,1,,23890,,Easton town
+1160,,,,9,1,,26620,,Fairfield town
+1160,,,,9,1,,48620,,Monroe town
+1160,,,,9,1,,68100,,Shelton city
+1160,,,,9,1,,74190,,Stratford town
+1160,,,,9,1,,77200,,Trumbull town
+1160,,,,9,9,,,,New Haven County (pt.)
+1160,,,,9,9,,19480,,Derby city
+1160,,,,9,9,,47500,,Milford city
+,,,,,,,,,
+1170,,,,,,,,,"Bristol, CT SMSA"
+1170,,,,9,3,,,,Hartford County (pt.)
+1170,,,,9,3,,8420,,Bristol city
+1170,,,,9,3,,10100,,Burlington town
+1170,,,,9,5,,,,Litchfield County (pt.)
+1170,,,,9,5,,60750,,Plymouth town
+,,,,,,,,,
+1200,,7,,,,,,,"Brockton, MA SMSA"
+1200,,7,,25,5,,,,Bristol County (pt.)
+1200,,7,,25,5,,20100,,Easton town
+1200,,7,,25,21,,,,Norfolk County (pt.)
+1200,,7,,25,21,,2935,,Avon town
+1200,,7,,25,23,,,,Plymouth County (pt.)
+1200,,7,,25,23,,8085,,Bridgewater town
+1200,,7,,25,23,,9000,,Brockton city
+1200,,7,,25,23,,18455,,East Bridgewater town
+1200,,7,,25,23,,27795,,Halifax town
+1200,,7,,25,23,,75260,,West Bridgewater town
+1200,,7,,25,23,,79530,,Whitman town
+,,,,,,,,,
+1240,,,,,,,,,"Brownsville-Harlingen-San Benito, TX SMSA"
+1240,,,,48,61,,,,Cameron County
+,,,,,,,,,
+1260,,,,,,,,,"Bryan-College Station, TX SMSA"
+1260,,,,48,41,,,,Brazos County
+,,,,,,,,,
+1280,,,,,,,,,"Buffalo, NY SMSA"
+1280,,,,36,29,,,,Erie County
+1280,,,,36,63,,,,Niagara County
+,,,,,,,,,
+1300,,,,,,,,,"Burlington, NC SMSA"
+1300,,,,37,1,,,,Alamance County
+,,,,,,,,,
+1305,,,,,,,,,"Burlington, VT SMSA"
+1305,,,,50,7,,,,Chittenden County (pt.)
+1305,,,,50,7,,10675,,Burlington city
+1305,,,,50,7,,13300,,Charlotte town
+1305,,,,50,7,,14875,,Colchester town
+1305,,,,50,7,,24175,,Essex town
+1305,,,,50,7,,33475,,Hinesburg town
+1305,,,,50,7,,36700,,Jericho town
+1305,,,,50,7,,45250,,Milton town
+1305,,,,50,7,,59275,,Richmond town
+1305,,,,50,7,,62050,,St. George town
+1305,,,,50,7,,64300,,Shelburne town
+1305,,,,50,7,,66175,,South Burlington city
+1305,,,,50,7,,84475,,Williston town
+1305,,,,50,7,,85150,,Winooski city
+1305,,,,50,11,,,,Franklin County (pt.)
+1305,,,,50,11,,27700,,Georgia town
+1305,,,,50,13,,,,Grand Isle County (pt.)
+1305,,,,50,13,,67000,,South Hero town
+,,,,,,,,,
+1310,,87,,,,,,,"Caguas, PR SMSA"
+1310,,87,,72,25,,,,Caguas Municipio
+1310,,87,,72,63,,,,Gurabo Municipio
+1310,,87,,72,129,,,,San Lorenzo Municipio
+,,,,,,,,,
+1320,,,,,,,,,"Canton, OH SMSA"
+1320,,,,39,19,,,,Carroll County
+1320,,,,39,151,,,,Stark County
+,,,,,,,,,
+1350,,,,,,,,,"Casper, WY SMSA"
+1350,,,,56,25,,,,Natrona County
+,,,,,,,,,
+1360,,,,,,,,,"Cedar Rapids, IA SMSA"
+1360,,,,19,113,,,,Linn County
+,,,,,,,,,
+1400,,,,,,,,,"Champaign-Urbana-Rantoul, IL SMSA"
+1400,,,,17,19,,,,Champaign County
+,,,,,,,,,
+1440,,,,,,,,,"Charleston-North Charleston, SC SMSA"
+1440,,,,45,15,,,,Berkeley County
+1440,,,,45,19,,,,Charleston County
+1440,,,,45,35,,,,Dorchester County
+,,,,,,,,,
+1480,,,,,,,,,"Charleston, WV SMSA"
+1480,,,,54,39,,,,Kanawha County
+1480,,,,54,79,,,,Putnam County
+,,,,,,,,,
+1520,,,,,,,,,"Charlotte-Gastonia, NC SMSA"
+1520,,,,37,71,,,,Gaston County
+1520,,,,37,119,,,,Mecklenburg County
+1520,,,,37,179,,,,Union County
+,,,,,,,,,
+1540,,,,,,,,,"Charlottesville, VA SMSA"
+1540,,,,51,3,,,,Albemarle County
+1540,,,,51,540,,,,Charlottesville city
+1540,,,,51,65,,,,Fluvanna County
+1540,,,,51,79,,,,Greene County
+,,,,,,,,,
+1560,,,,,,,,,"Chattanooga, TN-GA SMSA"
+1560,,,,13,47,,,,"Catoosa County, GA"
+1560,,,,13,83,,,,"Dade County, GA"
+1560,,,,13,295,,,,"Walker County, GA"
+1560,,,,47,65,,,,"Hamilton County, TN"
+1560,,,,47,115,,,,"Marion County, TN"
+1560,,,,47,153,,,,"Sequatchie County, TN"
+,,,,,,,,,
+1600,,14,,,,,,,"Chicago, IL SMSA"
+1600,,14,,17,31,,,,Cook County
+1600,,14,,17,43,,,,Du Page County
+1600,,14,,17,89,,,,Kane County
+1600,,14,,17,97,,,,Lake County
+1600,,14,,17,111,,,,McHenry County
+1600,,14,,17,197,,,,Will County
+,,,,,,,,,
+1620,,,,,,,,,"Chico, CA SMSA"
+1620,,,,6,7,,,,Butte County
+,,,,,,,,,
+1640,,21,,,,,,,"Cincinnati, OH-KY-IN SMSA"
+1640,,21,,18,29,,,,"Dearborn County, IN"
+1640,,21,,21,15,,,,"Boone County, KY"
+1640,,21,,21,37,,,,"Campbell County, KY"
+1640,,21,,21,117,,,,"Kenton County, KY"
+1640,,21,,39,25,,,,"Clermont County, OH"
+1640,,21,,39,61,,,,"Hamilton County, OH"
+1640,,21,,39,165,,,,"Warren County, OH"
+,,,,,,,,,
+1660,,,,,,,,,"Clarksville-Hopkinsville, TN-KY SMSA"
+1660,,,,21,47,,,,"Christian County, KY"
+1660,,,,47,125,,,,"Montgomery County, TN"
+,,,,,,,,,
+1680,,28,,,,,,,"Cleveland, OH SMSA"
+1680,,28,,39,35,,,,Cuyahoga County
+1680,,28,,39,55,,,,Geauga County
+1680,,28,,39,85,,,,Lake County
+1680,,28,,39,103,,,,Medina County
+,,,,,,,,,
+1720,,,,,,,,,"Colorado Springs, CO SMSA"
+1720,,,,8,41,,,,El Paso County
+1720,,,,8,119,,,,Teller County
+,,,,,,,,,
+1740,,,,,,,,,"Columbia, MO SMSA"
+1740,,,,29,19,,,,Boone County
+,,,,,,,,,
+1760,,,,,,,,,"Columbia, SC SMSA"
+1760,,,,45,63,,,,Lexington County
+1760,,,,45,79,,,,Richland County
+,,,,,,,,,
+1800,,,,,,,,,"Columbus, GA-AL SMSA"
+1800,,,,1,113,,,,"Russell County, AL"
+1800,,,,13,53,,,,"Chattahoochee County, GA"
+1800,,,,13,215,,,,"Muscogee County, GA"
+,,,,,,,,,
+1840,,,,,,,,,"Columbus, OH SMSA"
+1840,,,,39,41,,,,Delaware County
+1840,,,,39,45,,,,Fairfield County
+1840,,,,39,49,,,,Franklin County
+1840,,,,39,97,,,,Madison County
+1840,,,,39,129,,,,Pickaway County
+,,,,,,,,,
+,,,,,,,,,
+1880,,,,,,,,,"Corpus Christi, TX SMSA"
+1880,,,,48,355,,,,Nueces County
+1880,,,,48,409,,,,San Patricio County
+,,,,,,,,,
+1900,,,,,,,,,"Cumberland, MD-WV SMSA"
+1900,,,,24,1,,,,"Allegany County, MD"
+1900,,,,54,57,,,,"Mineral County, WV"
+,,,,,,,,,
+1920,,,,,,,,,"Dallas-Fort Worth, TX SMSA"
+1920,,,,48,85,,,,Collin County
+1920,,,,48,113,,,,Dallas County
+1920,,,,48,121,,,,Denton County
+1920,,,,48,139,,,,Ellis County
+1920,,,,48,221,,,,Hood County
+1920,,,,48,251,,,,Johnson County
+1920,,,,48,257,,,,Kaufman County
+1920,,,,48,367,,,,Parker County
+1920,,,,48,397,,,,Rockwall County
+1920,,,,48,439,,,,Tarrant County
+1920,,,,48,497,,,,Wise County
+,,,,,,,,,
+1930,,,,,,,,,"Danbury, CT SMSA"
+1930,,,,9,1,,,,Fairfield County (pt.)
+1930,,,,9,1,,4720,,Bethel town
+1930,,,,9,1,,8980,,Brookfield town
+1930,,,,9,1,,18430,,Danbury city
+1930,,,,9,1,,50860,,New Fairfield town
+1930,,,,9,1,,52980,,Newtown town
+1930,,,,9,1,,63480,,Redding town
+1930,,,,9,5,,,,Litchfield County (pt.)
+1930,,,,9,5,,52630,,New Milford town
+,,,,,,,,,
+1950,,,,,,,,,"Danville, VA SMSA"
+1950,,,,51,590,,,,Danville city
+1950,,,,51,143,,,,Pittsylvania County
+,,,,,,,,,
+1960,,,,,,,,,"Davenport-Rock Island-Moline, IA-IL SMSA"
+1960,,,,19,163,,,,"Scott County, IA"
+1960,,,,17,73,,,,"Henry County, IL"
+1960,,,,17,161,,,,"Rock Island County, IL"
+,,,,,,,,,
+2000,,32,,,,,,,"Dayton, OH SMSA"
+2000,,32,,39,57,,,,Greene County
+2000,,32,,39,109,,,,Miami County
+2000,,32,,39,113,,,,Montgomery County
+2000,,32,,39,135,,,,Preble County
+,,,,,,,,,
+2020,,,,,,,,,"Daytona Beach, FL SMSA"
+2020,,,,12,127,,,,Volusia County
+,,,,,,,,,
+2040,,,,,,,,,"Decatur, IL SMSA"
+2040,,,,17,115,,,,Macon County
+,,,,,,,,,
+2080,,,,,,,,,"Denver-Boulder, CO SMSA"
+2080,,,,8,1,,,,Adams County
+2080,,,,8,5,,,,Arapahoe County
+2080,,,,8,13,,,,Boulder County
+2080,,,,8,31,,,,Denver County
+2080,,,,8,35,,,,Douglas County
+2080,,,,8,47,,,,Gilpin County
+2080,,,,8,59,,,,Jefferson County
+,,,,,,,,,
+2120,,,,,,,,,"Des Moines, IA SMSA"
+2120,,,,19,153,,,,Polk County
+2120,,,,19,181,,,,Warren County
+,,,,,,,,,
+2160,,35,,,,,,,"Detroit, MI SMSA"
+2160,,35,,26,87,,,,Lapeer County
+2160,,35,,26,93,,,,Livingston County
+2160,,35,,26,99,,,,Macomb County
+2160,,35,,26,125,,,,Oakland County
+2160,,35,,26,147,,,,St.Clair County
+2160,,35,,26,163,,,,Wayne County
+,,,,,,,,,
+2200,,,,,,,,,"Dubuque, IA SMSA"
+2200,,,,19,61,,,,Dubuque County
+,,,,,,,,,
+2240,,,,,,,,,"Duluth-Superior, MN-WI SMSA"
+2240,,,,27,137,,,,"St.Louis County, MN"
+2240,,,,55,31,,,,"Douglas County, WI"
+,,,,,,,,,
+2290,,,,,,,,,"Eau Claire, WI SMSA"
+2290,,,,55,17,,,,Chippewa County
+2290,,,,55,35,,,,Eau Claire County
+,,,,,,,,,
+2320,,,,,,,,,"El Paso, TX SMSA"
+2320,,,,48,141,,,,El Paso County
+,,,,,,,,,
+2330,,,,,,,,,"Elkhart, IN SMSA"
+2330,,,,18,39,,,,Elkhart County
+,,,,,,,,,
+2335,,,,,,,,,"Elmira, NY SMSA"
+2335,,,,36,15,,,,Chemung County
+,,,,,,,,,
+2340,,,,,,,,,"Enid, OK SMSA"
+2340,,,,40,47,,,,Garfield County
+,,,,,,,,,
+2360,,,,,,,,,"Erie, PA SMSA"
+2360,,,,42,49,,,,Erie County
+,,,,,,,,,
+2400,,,,,,,,,"Eugene-Springfield, OR SMSA"
+2400,,,,41,39,,,,Lane County
+,,,,,,,,,
+2440,,,,,,,,,"Evansville, IN-KY SMSA"
+2440,,,,18,51,,,,"Gibson County, IN"
+2440,,,,18,129,,,,"Posey County, IN"
+2440,,,,18,163,,,,"Vanderburgh County, IN"
+2440,,,,18,173,,,,"Warrick County, IN"
+2440,,,,21,101,,,,"Henderson County, KY"
+,,,,,,,,,
+2480,,80,,,,,,,"Fall River, MA-RI SMSA"
+2480,,80,,25,5,,,,"Bristol County, MA (pt.)"
+2480,,80,,25,5,,16950,,Dighton town
+2480,,80,,25,5,,23000,,Fall River city
+2480,,80,,25,5,,62430,,Somerset town
+2480,,80,,25,5,,68750,,Swansea town
+2480,,80,,25,5,,77570,,Westport town
+2480,,80,,44,5,,,,"Newport County, RI (pt.)"
+2480,,80,,44,5,,42400,,Little Compton town
+2480,,80,,44,5,,57880,,Portsmouth town
+2480,,80,,44,5,,70880,,Tiverton town
+,,,,,,,,,
+2520,,,,,,,,,"Fargo-Moorhead, ND-MN SMSA"
+2520,,,,27,27,,,,"Clay County, MN"
+2520,,,,38,17,,,,"Cass County, ND"
+,,,,,,,,,
+2560,,,,,,,,,"Fayetteville, NC SMSA"
+2560,,,,37,51,,,,Cumberland County
+,,,,,,,,,
+2580,,,,,,,,,"Fayetteville-Springdale, AR SMSA"
+2580,,,,5,7,,,,Benton County
+2580,,,,5,143,,,,Washington County
+,,,,,,,,,
+2600,,,,,,,,,"Fitchburg-Leominster, MA SMSA"
+2600,,,,25,17,,,,Middlesex County (pt.)
+2600,,,,25,17,,61590,,Shirley town
+2600,,,,25,17,,70360,,Townsend town
+2600,,,,25,27,,,,Worcester County (pt.)
+2600,,,,25,27,,23875,,Fitchburg city
+2600,,,,25,27,,35075,,Leominster city
+2600,,,,25,27,,37420,,Lunenburg town
+2600,,,,25,27,,77010,,Westminster town
+,,,,,,,,,
+2640,,,,,,,,,"Flint, MI SMSA"
+2640,,,,26,49,,,,Genesee County
+2640,,,,26,155,,,,Shiawassee County
+,,,,,,,,,
+2650,,,,,,,,,"Florence, AL SMSA"
+2650,,,,1,33,,,,Colbert County
+2650,,,,1,77,,,,Lauderdale County
+,,,,,,,,,
+2655,,,,,,,,,"Florence, SC SMSA"
+2655,,,,45,41,,,,Florence County
+,,,,,,,,,
+2670,,,,,,,,,"Fort Collins, CO SMSA"
+2670,,,,8,69,,,,Larimer County
+,,,,,,,,,
+2680,,56,,,,,,,"Fort Lauderdale-Hollywood, FL SMSA"
+2680,,56,,12,11,,,,Broward County
+,,,,,,,,,
+2700,,,,,,,,,"Fort Myers-Cape Coral, FL SMSA"
+2700,,,,12,71,,,,Lee County
+,,,,,,,,,
+2720,,,,,,,,,"Fort Smith, AR-OK SMSA"
+2720,,,,5,33,,,,"Crawford County, AR"
+2720,,,,5,131,,,,"Sebastian County, AR"
+2720,,,,40,79,,,,"Le Flore County, OK"
+2720,,,,40,135,,,,"Sequoyah County, OK"
+,,,,,,,,,
+2750,,,,,,,,,"Fort Walton Beach, FL SMSA"
+2750,,,,12,91,,,,Okaloosa County
+,,,,,,,,,
+2760,,,,,,,,,"Fort Wayne, IN SMSA"
+2760,,,,18,1,,,,Adams County
+2760,,,,18,3,,,,Allen County
+2760,,,,18,33,,,,De Kalb County
+2760,,,,18,179,,,,Wells County
+,,,,,,,,,
+2840,,,,,,,,,"Fresno, CA SMSA"
+2840,,,,6,19,,,,Fresno County
+,,,,,,,,,
+2880,,,,,,,,,"Gadsden, AL SMSA"
+2880,,,,1,55,,,,Etowah County
+,,,,,,,,,
+2900,,,,,,,,,"Gainesville, FL SMSA"
+2900,,,,12,1,,,,Alachua County
+,,,,,,,,,
+2920,,42,,,,,,,"Galveston-Texas City, TX SMSA"
+2920,,42,,48,167,,,,Galveston County
+,,,,,,,,,
+2960,,14,,,,,,,"Gary-Hammond-East Chicago, IN SMSA"
+2960,,14,,18,89,,,,Lake County
+2960,,14,,18,127,,,,Porter County
+,,,,,,,,,
+2975,,,,,,,,,"Glens Falls, NY SMSA"
+2975,,,,36,113,,,,Warren County
+2975,,,,36,115,,,,Washington County
+,,,,,,,,,
+2985,,,,,,,,,"Grand Forks, ND-MN SMSA"
+2985,,,,27,119,,,,"Polk County, MN"
+2985,,,,38,35,,,,"Grand Forks County, ND"
+,,,,,,,,,
+3000,,,,,,,,,"Grand Rapids, MI SMSA"
+3000,,,,26,81,,,,Kent County
+3000,,,,26,139,,,,Ottawa County
+,,,,,,,,,
+3040,,,,,,,,,"Great Falls, MT SMSA"
+3040,,,,30,13,,,,Cascade County
+,,,,,,,,,
+3060,,,,,,,,,"Greeley, CO SMSA"
+3060,,,,8,123,,,,Weld County
+,,,,,,,,,
+3080,,,,,,,,,"Green Bay, WI SMSA"
+3080,,,,55,9,,,,Brown County
+,,,,,,,,,
+3120,,,,,,,,,"Greensboro--Winston-Salem--High Point, NC SMSA"
+3120,,,,37,57,,,,Davidson County
+3120,,,,37,67,,,,Forsyth County
+3120,,,,37,81,,,,Guilford County
+3120,,,,37,151,,,,Randolph County
+3120,,,,37,169,,,,Stokes County
+3120,,,,37,197,,,,Yadkin County
+,,,,,,,,,
+3160,,,,,,,,,"Greenville-Spartanburg, SC SMSA"
+3160,,,,45,45,,,,Greenville County
+3160,,,,45,77,,,,Pickens County
+3160,,,,45,83,,,,Spartanburg County
+,,,,,,,,,
+3180,,,,,,,,,"Hagerstown, MD SMSA"
+3180,,,,24,43,,,,Washington County
+,,,,,,,,,
+3200,,21,,,,,,,"Hamilton-Middletown, OH SMSA"
+3200,,21,,39,17,,,,Butler County
+,,,,,,,,,
+3240,,,,,,,,,"Harrisburg, PA SMSA"
+3240,,,,42,41,,,,Cumberland County
+3240,,,,42,43,,,,Dauphin County
+3240,,,,42,99,,,,Perry County
+,,,,,,,,,
+3280,,,,,,,,,"Hartford, CT SMSA"
+3280,,,,9,3,,,,Hartford County (pt.)
+3280,,,,9,3,,2060,,Avon town
+3280,,,,9,3,,5910,,Bloomfield town
+3280,,,,9,3,,12270,,Canton town
+3280,,,,9,3,,22070,,East Granby town
+3280,,,,9,3,,22630,,East Hartford town
+3280,,,,9,3,,24800,,East Windsor town
+3280,,,,9,3,,25990,,Enfield town
+3280,,,,9,3,,27600,,Farmington town
+3280,,,,9,3,,31240,,Glastonbury town
+3280,,,,9,3,,32640,,Granby town
+3280,,,,9,3,,37000,,Hartford city
+3280,,,,9,3,,44700,,Manchester town
+3280,,,,9,3,,45820,,Marlborough town
+3280,,,,9,3,,52140,,Newington town
+3280,,,,9,3,,65370,,Rocky Hill town
+3280,,,,9,3,,68940,,Simsbury town
+3280,,,,9,3,,71390,,South Windsor town
+3280,,,,9,3,,74540,,Suffield town
+3280,,,,9,3,,82590,,West Hartford town
+3280,,,,9,3,,84900,,Wethersfield town
+3280,,,,9,3,,87000,,Windsor town
+3280,,,,9,3,,87070,,Windsor Locks town
+3280,,,,9,5,,,,Litchfield County (pt.)
+3280,,,,9,5,,51350,,New Hartford town
+3280,,,,9,7,,,,Middlesex County (pt.)
+3280,,,,9,7,,18080,,Cromwell town
+3280,,,,9,7,,22490,,East Hampton town
+3280,,,,9,7,,61800,,Portland town
+3280,,,,9,11,,,,New London County (pt.)
+3280,,,,9,11,,15910,,Colchester town
+3280,,,,9,13,,,,Tolland County (pt.)
+3280,,,,9,13,,1080,,Andover town
+3280,,,,9,13,,6260,,Bolton town
+3280,,,,9,13,,16400,,Columbia town
+3280,,,,9,13,,17800,,Coventry town
+3280,,,,9,13,,25360,,Ellington town
+3280,,,,9,13,,37910,,Hebron town
+3280,,,,9,13,,72090,,Stafford town
+3280,,,,9,13,,76290,,Tolland town
+3280,,,,9,13,,78250,,Vernon town
+3280,,,,9,13,,85950,,Willington town
+,,,,,,,,,
+3290,,,,,,,,,"Hickory, NC SMSA"
+3290,,,,37,3,,,,Alexander County
+3290,,,,37,35,,,,Catawba County
+,,,,,,,,,
+3320,,,,,,,,,"Honolulu, HI SMSA"
+3320,,,,15,3,,,,Honolulu County
+,,,,,,,,,
+3360,,42,,,,,,,"Houston, TX SMSA"
+3360,,42,,48,39,,,,Brazoria County
+3360,,42,,48,157,,,,Fort Bend County
+3360,,42,,48,201,,,,Harris County
+3360,,42,,48,291,,,,Liberty County
+3360,,42,,48,339,,,,Montgomery County
+3360,,42,,48,473,,,,Waller County
+,,,,,,,,,
+3400,,,,,,,,,"Huntington-Ashland, WV-KY-OH SMSA"
+3400,,,,21,19,,,,"Boyd County, KY"
+3400,,,,21,89,,,,"Greenup County, KY"
+3400,,,,39,87,,,,"Lawrence County, OH"
+3400,,,,54,11,,,,"Cabell County, WV"
+3400,,,,54,99,,,,"Wayne County, WV"
+,,,,,,,,,
+3440,,,,,,,,,"Huntsville, AL SMSA"
+3440,,,,1,83,,,,Limestone County
+3440,,,,1,89,,,,Madison County
+3440,,,,1,95,,,,Marshall County
+,,,,,,,,,
+3480,,44,,,,,,,"Indianapolis, IN SMSA"
+3480,,44,,18,11,,,,Boone County
+3480,,44,,18,57,,,,Hamilton County
+3480,,44,,18,59,,,,Hancock County
+3480,,44,,18,63,,,,Hendricks County
+3480,,44,,18,81,,,,Johnson County
+3480,,44,,18,97,,,,Marion County
+3480,,44,,18,109,,,,Morgan County
+3480,,44,,18,145,,,,Shelby County
+,,,,,,,,,
+3500,,,,,,,,,"Iowa City, IA SMSA"
+3500,,,,19,103,,,,Johnson County
+,,,,,,,,,
+3520,,,,,,,,,"Jackson, MI SMSA"
+3520,,,,26,75,,,,Jackson County
+,,,,,,,,,
+3560,,,,,,,,,"Jackson, MS SMSA"
+3560,,,,28,49,,,,Hinds County
+3560,,,,28,121,,,,Rankin County
+,,,,,,,,,
+3600,,,,,,,,,"Jacksonville, FL SMSA"
+3600,,,,12,3,,,,Baker County
+3600,,,,12,19,,,,Clay County
+3600,,,,12,31,,,,Duval County
+3600,,,,12,89,,,,Nassau County
+3600,,,,12,109,,,,St. Johns County
+,,,,,,,,,
+3605,,,,,,,,,"Jacksonville, NC SMSA"
+3605,,,,37,133,,,,Onslow County
+,,,,,,,,,
+3620,,,,,,,,,"Janesville-Beloit, WI SMSA"
+3620,,,,55,105,,,,Rock County
+,,,,,,,,,
+3640,,70,,,,,,,"Jersey City, NJ SMSA"
+3640,,70,,34,17,,,,Hudson County
+,,,,,,,,,
+3660,,,,,,,,,"Johnson City-Kingsport-Bristol, TN-VA SMSA"
+3660,,,,47,19,,,,"Carter County, TN"
+3660,,,,47,73,,,,"Hawkins County, TN"
+3660,,,,47,163,,,,"Sullivan County, TN"
+3660,,,,47,171,,,,"Unicoi County, TN"
+3660,,,,47,179,,,,"Washington County, TN"
+3660,,,,51,520,,,,"Bristol city, VA"
+3660,,,,51,169,,,,"Scott County, VA"
+3660,,,,51,191,,,,"Washington County, VA"
+,,,,,,,,,
+3680,,,,,,,,,"Johnstown, PA SMSA"
+3680,,,,42,21,,,,Cambria County
+3680,,,,42,111,,,,Somerset County
+,,,,,,,,,
+3710,,,,,,,,,"Joplin, MO SMSA"
+3710,,,,29,97,,,,Jasper County
+3710,,,,29,145,,,,Newton County
+,,,,,,,,,
+3720,,,,,,,,,"Kalamazoo-Portage, MI SMSA"
+3720,,,,26,77,,,,Kalamazoo County
+3720,,,,26,159,,,,Van Buren County
+,,,,,,,,,
+3740,,,,,,,,,"Kankakee, IL MSA"
+3740,,,,17,91,,,,Kankakee County
+,,,,,,,,,
+3760,,,,,,,,,"Kansas City, MO-KS SMSA"
+3760,,,,20,91,,,,"Johnson County, KS"
+3760,,,,20,209,,,,"Wyandotte County, KS"
+3760,,,,29,37,,,,"Cass County, MO"
+3760,,,,29,47,,,,"Clay County, MO"
+3760,,,,29,95,,,,"Jackson County, MO"
+3760,,,,29,165,,,,"Platte County, MO"
+3760,,,,29,177,,,,"Ray County, MO"
+,,,,,,,,,
+3800,,14,,,,,,,"Kenosha, WI SMSA"
+3800,,14,,55,59,,,,Kenosha County
+,,,,,,,,,
+3810,,,,,,,,,"Killeen-Temple, TX SMSA"
+3810,,,,48,27,,,,Bell County
+3810,,,,48,99,,,,Coryell County
+,,,,,,,,,
+3840,,,,,,,,,"Knoxville, TN SMSA"
+3840,,,,47,1,,,,Anderson County
+3840,,,,47,9,,,,Blount County
+3840,,,,47,93,,,,Knox County
+3840,,,,47,173,,,,Union County
+,,,,,,,,,
+3850,,,,,,,,,"Kokomo, IN SMSA"
+3850,,,,18,67,,,,Howard County
+3850,,,,18,159,,,,Tipton County
+,,,,,,,,,
+3870,,,,,,,,,"La Crosse, WI SMSA"
+3870,,,,55,63,,,,La Crosse County
+,,,,,,,,,
+3880,,,,,,,,,"Lafayette, LA SMSA"
+3880,,,,22,55,,,,Lafayette Parish
+,,,,,,,,,
+3920,,,,,,,,,"Lafayette-West Lafayette, IN SMSA"
+3920,,,,18,157,,,,Tippecanoe County
+,,,,,,,,,
+3960,,,,,,,,,"Lake Charles, LA SMSA"
+3960,,,,22,19,,,,Calcasieu Parish
+,,,,,,,,,
+3980,,,,,,,,,"Lakeland-Winter Haven, FL SMSA"
+3980,,,,12,105,,,,Polk County
+,,,,,,,,,
+4000,,,,,,,,,"Lancaster, PA SMSA"
+4000,,,,42,71,,,,Lancaster County
+,,,,,,,,,
+4040,,,,,,,,,"Lansing-East Lansing, MI SMSA"
+4040,,,,26,37,,,,Clinton County
+4040,,,,26,45,,,,Eaton County
+4040,,,,26,65,,,,Ingham County
+4040,,,,26,67,,,,Ionia County
+,,,,,,,,,
+4080,,,,,,,,,"Laredo, TX SMSA"
+4080,,,,48,479,,,,Webb County
+,,,,,,,,,
+4100,,,,,,,,,"Las Cruces, NM SMSA"
+4100,,,,35,13,,,,Dona Ana County
+,,,,,,,,,
+4120,,,,,,,,,"Las Vegas, NV SMSA"
+4120,,,,32,3,,,,Clark County
+,,,,,,,,,
+4150,,,,,,,,,"Lawrence, KS SMSA"
+4150,,,,20,45,,,,Douglas County
+,,,,,,,,,
+4160,,7,,,,,,,"Lawrence-Haverhill, MA-NH SMSA"
+4160,,7,,25,9,,,,"Essex County, MA (pt.)"
+4160,,7,,25,9,,1185,,Amesbury town
+4160,,7,,25,9,,1465,,Andover town
+4160,,7,,25,9,,25625,,Georgetown town
+4160,,7,,25,9,,27620,,Groveland town
+4160,,7,,25,9,,29405,,Haverhill city
+4160,,7,,25,9,,34550,,Lawrence city
+4160,,7,,25,9,,40430,,Merrimac town
+4160,,7,,25,9,,40675,,Methuen town
+4160,,7,,25,9,,46365,,North Andover town
+4160,,7,,25,9,,59245,,Salisbury town
+4160,,7,,25,9,,77150,,West Newbury town
+4160,,7,,33,15,,,,"Rockingham County, NH (pt.)"
+4160,,7,,33,15,,2340,,Atkinson town
+4160,,7,,33,15,,32900,,Hampstead town
+4160,,7,,33,15,,40100,,Kingston town
+4160,,7,,33,15,,52900,,Newton town
+4160,,7,,33,15,,62500,,Plaistow town
+4160,,7,,33,15,,66660,,Salem town
+4160,,7,,33,15,,85780,,Windham town
+,,,,,,,,,
+4200,,,,,,,,,"Lawton, OK SMSA"
+4200,,,,40,31,,,,Comanche County
+,,,,,,,,,
+4240,,,,,,,,,"Lewiston-Auburn, ME SMSA"
+4240,,,,23,1,,,,Androscoggin County (pt.)
+4240,,,,23,1,,2060,,Auburn city
+4240,,,,23,1,,38740,,Lewiston city
+4240,,,,23,1,,40035,,Lisbon town
+,,,,,,,,,
+4280,,,,,,,,,"Lexington-Fayette, KY SMSA"
+4280,,,,21,17,,,,Bourbon County
+4280,,,,21,49,,,,Clark County
+4280,,,,21,67,,,,Fayette County
+4280,,,,21,113,,,,Jessamine County
+4280,,,,21,209,,,,Scott County
+4280,,,,21,239,,,,Woodford County
+,,,,,,,,,
+4320,,,,,,,,,"Lima, OH SMSA"
+4320,,,,39,3,,,,Allen County
+4320,,,,39,11,,,,Auglaize County
+4320,,,,39,137,,,,Putnam County
+4320,,,,39,161,,,,Van Wert County
+,,,,,,,,,
+4360,,,,,,,,,"Lincoln, NE SMSA"
+4360,,,,31,109,,,,Lancaster County
+,,,,,,,,,
+4400,,,,,,,,,"Little Rock-North Little Rock, AR SMSA"
+4400,,,,5,119,,,,Pulaski County
+4400,,,,5,125,,,,Saline County
+,,,,,,,,,
+4410,,70,,,,,,,"Long Branch-Asbury Park, NJ SMSA"
+4410,,70,,34,25,,,,Monmouth County
+,,,,,,,,,
+4420,,,,,,,,,"Longview-Marshall, TX SMSA"
+4420,,,,48,183,,,,Gregg County
+4420,,,,48,203,,,,Harrison County
+,,,,,,,,,
+,,,,,,,,,
+4440,,28,,,,,,,"Lorain-Elyria, OH SMSA"
+4440,,28,,39,93,,,,Lorain County
+,,,,,,,,,
+4480,,49,,,,,,,"Los Angeles-Long Beach, CA SMSA"
+4480,,49,,6,37,,,,Los Angeles County
+,,,,,,,,,
+4520,,,,,,,,,"Louisville, KY-IN SMSA"
+4520,,,,18,19,,,,"Clark County, IN"
+4520,,,,18,43,,,,"Floyd County, IN"
+4520,,,,21,29,,,,"Bullitt County, KY"
+4520,,,,21,111,,,,"Jefferson County, KY"
+4520,,,,21,185,,,,"Oldham County, KY"
+,,,,,,,,,
+4560,,7,,,,,,,"Lowell, MA-NH SMSA"
+4560,,7,,25,17,,,,"Middlesex County, MA (pt.)"
+4560,,7,,25,17,,5805,,Billerica town
+4560,,7,,25,17,,13135,,Chelmsford town
+4560,,7,,25,17,,17475,,Dracut town
+4560,,7,,25,17,,37000,,Lowell city
+4560,,7,,25,17,,69415,,Tewksbury town
+4560,,7,,25,17,,71025,,Tyngsborough town
+4560,,7,,25,17,,76135,,Westford town
+4560,,7,,33,11,,,,"Hillsborough County, NH (pt.)"
+4560,,7,,33,11,,59940,,Pelham town
+,,,,,,,,,
+,,,,,,,,,
+4600,,,,,,,,,"Lubbock, TX SMSA"
+4600,,,,48,303,,,,Lubbock County
+,,,,,,,,,
+4640,,,,,,,,,"Lynchburg, VA SMSA"
+4640,,,,51,9,,,,Amherst County
+4640,,,,51,11,,,,Appomattox County
+4640,,,,51,31,,,,Campbell County
+4640,,,,51,680,,,,Lynchburg city
+,,,,,,,,,
+4680,,,,,,,,,"Macon, GA SMSA"
+4680,,,,13,21,,,,Bibb County
+4680,,,,13,153,,,,Houston County
+4680,,,,13,169,,,,Jones County
+4680,,,,13,289,,,,Twiggs County
+,,,,,,,,,
+4720,,,,,,,,,"Madison, WI SMSA"
+4720,,,,55,25,,,,Dane County
+,,,,,,,,,
+4760,,,,,,,,,"Manchester, NH SMSA"
+4760,,,,33,11,,,,Hillsborough County (pt.)
+4760,,,,33,11,,4500,,Bedford town
+4760,,,,33,11,,29860,,Goffstown town
+4760,,,,33,11,,45140,,Manchester city
+4760,,,,33,13,,,,Merrimack County (pt.)
+4760,,,,33,13,,660,,Allenstown town
+4760,,,,33,13,,37300,,Hooksett town
+4760,,,,33,13,,60020,,Pembroke town
+4760,,,,33,15,,,,Rockingham County (pt.)
+4760,,,,33,15,,17940,,Derry town
+4760,,,,33,15,,43220,,Londonderry town
+,,,,,,,,,
+4800,,,,,,,,,"Mansfield, OH SMSA"
+4800,,,,39,139,,,,Richland County
+,,,,,,,,,
+4840,,,,,,,,,"Mayaguez, PR SMSA"
+4840,,,,72,11,,,,Anasco Municipio
+4840,,,,72,67,,,,Hormigueros Municipio
+4840,,,,72,97,,,,Mayaguez Municipio
+,,,,,,,,,
+4880,,,,,,,,,"McAllen-Pharr-Edinburg, TX SMSA"
+4880,,,,48,215,,,,Hidalgo County
+,,,,,,,,,
+4890,,,,,,,,,"Medford, OR SMSA"
+4890,,,,41,29,,,,Jackson County
+,,,,,,,,,
+4900,,,,,,,,,"Melbourne-Titusville-Cocoa, FL SMSA"
+4900,,,,12,9,,,,Brevard County
+,,,,,,,,,
+4920,,,,,,,,,"Memphis, TN-AR-MS SMSA"
+4920,,,,5,35,,,,"Crittenden County, AR"
+4920,,,,28,33,,,,"De Soto County, MS"
+4920,,,,47,157,,,,"Shelby County, TN"
+4920,,,,47,167,,,,"Tipton County, TN"
+,,,,,,,,,
+4960,,,,,,,,,"Meriden, CT SMSA"
+4960,,,,9,9,,,,New Haven County (pt.)
+4960,,,,9,9,,46450,,Meriden city
+,,,,,,,,,
+5000,,56,,,,,,,"Miami, FL SMSA"
+5000,,56,,12,25,,,,Dade County
+,,,,,,,,,
+5040,,,,,,,,,"Midland, TX SMSA"
+5040,,,,48,329,,,,Midland County
+,,,,,,,,,
+5080,,63,,,,,,,"Milwaukee, WI SMSA"
+5080,,63,,55,79,,,,Milwaukee County
+5080,,63,,55,89,,,,Ozaukee County
+5080,,63,,55,131,,,,Washington County
+5080,,63,,55,133,,,,Waukesha County
+,,,,,,,,,
+5120,,,,,,,,,"Minneapolis-St. Paul, MN-WI SMSA"
+5120,,,,27,3,,,,"Anoka County, MN"
+5120,,,,27,19,,,,"Carver County, MN"
+5120,,,,27,25,,,,"Chisago County, MN"
+5120,,,,27,37,,,,"Dakota County, MN"
+5120,,,,27,53,,,,"Hennepin County, MN"
+5120,,,,27,123,,,,"Ramsey County, MN"
+5120,,,,27,139,,,,"Scott County, MN"
+5120,,,,27,163,,,,"Washington County, MN"
+5120,,,,27,171,,,,"Wright County, MN"
+5120,,,,55,109,,,,"St. Croix County, WI"
+,,,,,,,,,
+5160,,,,,,,,,"Mobile, AL SMSA"
+5160,,,,1,3,,,,Baldwin County
+5160,,,,1,97,,,,Mobile County
+,,,,,,,,,
+5170,,,,,,,,,"Modesto, CA SMSA"
+5170,,,,6,99,,,,Stanislaus County
+,,,,,,,,,
+5200,,,,,,,,,"Monroe, LA SMSA"
+5200,,,,22,73,,,,Ouachita Parish
+,,,,,,,,,
+5240,,,,,,,,,"Montgomery, AL SMSA"
+5240,,,,1,1,,,,Autauga County
+5240,,,,1,51,,,,Elmore County
+5240,,,,1,101,,,,Montgomery County
+,,,,,,,,,
+5280,,,,,,,,,"Muncie, IN SMSA"
+5280,,,,18,35,,,,Delaware County
+,,,,,,,,,
+5320,,,,,,,,,"Muskegon-Norton Shores-Muskegon Heights, MI SMSA"
+5320,,,,26,121,,,,Muskegon County
+5320,,,,26,127,,,,Oceana County
+,,,,,,,,,
+5350,,,,,,,,,"Nashua, NH SMSA"
+5350,,,,33,11,,,,Hillsborough County (pt.)
+5350,,,,33,11,,1300,,Amherst town
+5350,,,,33,11,,37940,,Hudson town
+5350,,,,33,11,,47540,,Merrimack town
+5350,,,,33,11,,48020,,Milford town
+5350,,,,33,11,,50260,,Nashua city
+,,,,,,,,,
+5360,,,,,,,,,"Nashville-Davidson, TN SMSA"
+5360,,,,47,21,,,,Cheatham County
+5360,,,,47,37,,,,Davidson County
+5360,,,,47,43,,,,Dickson County
+5360,,,,47,147,,,,Robertson County
+5360,,,,47,149,,,,Rutherford County
+5360,,,,47,165,,,,Sumner County
+5360,,,,47,187,,,,Williamson County
+5360,,,,47,189,,,,Wilson County
+,,,,,,,,,
+5380,,70,,,,,,,"Nassau-Suffolk, NY SMSA"
+5380,,70,,36,59,,,,Nassau County
+5380,,70,,36,103,,,,Suffolk County
+,,,,,,,,,
+5400,,,,,,,,,"New Bedford, MA SMSA"
+5400,,,,25,5,,,,Bristol County (pt.)
+5400,,,,25,5,,520,,Acushnet town
+5400,,,,25,5,,16425,,Dartmouth town
+5400,,,,25,5,,22130,,Fairhaven town
+5400,,,,25,5,,25240,,Freetown town
+5400,,,,25,5,,45000,,New Bedford city
+5400,,,,25,23,,,,Plymouth County (pt.)
+5400,,,,25,23,,33920,,Lakeville town
+5400,,,,25,23,,38540,,Marion town
+5400,,,,25,23,,39450,,Mattapoisett town
+,,,,,,,,,
+,,,,,,,,,
+5440,,,,,,,,,"New Britain, CT SMSA"
+5440,,,,9,3,,,,Hartford County (pt.)
+5440,,,,9,3,,4300,,Berlin town
+5440,,,,9,3,,50370,,New Britain city
+5440,,,,9,3,,60120,,Plainville town
+5440,,,,9,3,,70550,,Southington town
+,,,,,,,,,
+5460,,70,,,,,,,"New Brunswick-Perth Amboy-Sayreville, NJ SMSA"
+5460,,70,,34,23,,,,Middlesex County
+,,,,,,,,,
+5480,,,,,,,,,"New Haven-West Haven, CT SMSA"
+5480,,,,9,7,,,,Middlesex County (pt.)
+5480,,,,9,7,,15350,,Clinton town
+5480,,,,9,9,,,,New Haven County (pt.)
+5480,,,,9,9,,4580,,Bethany town
+5480,,,,9,9,,7310,,Branford town
+5480,,,,9,9,,22910,,East Haven town
+5480,,,,9,9,,34950,,Guilford town
+5480,,,,9,9,,35650,,Hamden town
+5480,,,,9,9,,44560,,Madison town
+5480,,,,9,9,,52000,,New Haven city
+5480,,,,9,9,,53890,,North Branford town
+5480,,,,9,9,,54870,,North Haven town
+5480,,,,9,9,,57600,,Orange town
+5480,,,,9,9,,78740,,Wallingford town
+5480,,,,9,9,,82800,,West Haven city
+5480,,,,9,9,,87700,,Woodbridge town
+,,,,,,,,,
+5520,,,,,,,,,"New London-Norwich, CT-RI SMSA"
+5520,,,,9,7,,,,"Middlesex County, CT (pt.)"
+5520,,,,9,7,,57320,,Old Saybrook town
+5520,,,,9,11,,,,"New London County, CT (pt.)"
+5520,,,,9,11,,6820,,Bozrah town
+5520,,,,9,11,,23400,,East Lyme town
+5520,,,,9,11,,33900,,Griswold town
+5520,,,,9,11,,34250,,Groton town
+5520,,,,9,11,,42600,,Ledyard town
+5520,,,,9,11,,43230,,Lisbon town
+5520,,,,9,11,,48900,,Montville town
+5520,,,,9,11,,52280,,New London city
+5520,,,,9,11,,56200,,Norwich city
+5520,,,,9,11,,57040,,Old Lyme town
+5520,,,,9,11,,62150,,Preston town
+5520,,,,9,11,,71670,,Sprague town
+5520,,,,9,11,,73770,,Stonington town
+5520,,,,9,11,,80280,,Waterford town
+5520,,,,44,9,,,,"Washington County, RI (pt.)"
+5520,,,,44,9,,35380,,Hopkinton town
+5520,,,,44,9,,77000,,Westerly town
+,,,,,,,,,
+5560,,,,,,,,,"New Orleans, LA SMSA"
+5560,,,,22,51,,,,Jefferson Parish
+5560,,,,22,71,,,,Orleans Parish
+5560,,,,22,87,,,,St. Bernard Parish
+5560,,,,22,103,,,,St.Tammany Parish
+,,,,,,,,,
+5600,,70,,,,,,,"New York, NY-NJ SMSA"
+5600,,70,,34,3,,,,"Bergen County, NJ"
+5600,,70,,36,5,,,,"Bronx County, NY"
+5600,,70,,36,47,,,,"Kings County, NY"
+5600,,70,,36,61,,,,"New York County, NY"
+5600,,70,,36,79,,,,"Putnam County, NY"
+5600,,70,,36,81,,,,"Queens County, NY"
+5600,,70,,36,85,,,,"Richmond County, NY"
+5600,,70,,36,87,,,,"Rockland County, NY"
+5600,,70,,36,119,,,,"Westchester County, NY"
+,,,,,,,,,
+5640,,70,,,,,,,"Newark, NJ SMSA"
+5640,,70,,34,13,,,,Essex County
+5640,,70,,34,27,,,,Morris County
+5640,,70,,34,35,,,,Somerset County
+5640,,70,,34,39,,,,Union County
+,,,,,,,,,
+5645,,,,,,,,,"Newark, OH SMSA"
+5645,,,,39,89,,,,Licking County
+,,,,,,,,,
+5660,,,,,,,,,"Newburgh-Middletown, NY SMSA"
+5660,,,,36,71,,,,Orange County
+,,,,,,,,,
+5680,,,,,,,,,"Newport News-Hampton, VA SMSA"
+5680,,,,51,73,,,,Gloucester County
+5680,,,,51,650,,,,Hampton city
+5680,,,,51,95,,,,James City County
+5680,,,,51,700,,,,Newport News city
+5680,,,,51,735,,,,Poquoson city
+5680,,,,51,199,,,,York County
+5680,,,,51,830,,,,Williamsburg city
+,,,,,,,,,
+5720,,,,,,,,,"Norfolk-Virginia Beach-Portsmouth, VA-NC SMSA"
+5720,,,,37,53,,,,"Currituck County, NC"
+5720,,,,51,550,,,,"Chesapeake city, VA"
+5720,,,,51,710,,,,"Norfolk city, VA"
+5720,,,,51,740,,,,"Portsmouth city, VA"
+5720,,,,51,800,,,,"Suffolk city, VA"
+5720,,,,51,810,,,,"Virginia Beach city, VA"
+,,,,,,,,,
+5745,,,,,,,,,Northeast Pennsylvania SMSA
+5745,,,,42,69,,,,Lackawanna County
+5745,,,,42,79,,,,Luzerne County
+5745,,,,42,89,,,,Monroe County
+,,,,,,,,,
+5760,,70,,,,,,,"Norwalk, CT SMSA"
+5760,,70,,9,1,,,,Fairfield County (pt.)
+5760,,70,,9,1,,55990,,Norwalk city
+5760,,70,,9,1,,83430,,Weston town
+5760,,70,,9,1,,83500,,Westport town
+5760,,70,,9,1,,86370,,Wilton town
+,,,,,,,,,
+5790,,,,,,,,,"Ocala, FL SMSA"
+5790,,,,12,83,,,,Marion County
+,,,,,,,,,
+5800,,,,,,,,,"Odessa, TX SMSA"
+5800,,,,48,135,,,,Ector County
+,,,,,,,,,
+5880,,,,,,,,,"Oklahoma City, OK SMSA"
+5880,,,,40,17,,,,Canadian County
+5880,,,,40,27,,,,Cleveland County
+5880,,,,40,87,,,,McClain County
+5880,,,,40,109,,,,Oklahoma County
+5880,,,,40,125,,,,Pottawatomie County
+,,,,,,,,,
+5910,,,,,,,,,"Olympia, WA SMSA"
+5910,,,,53,67,,,,Thurston County
+,,,,,,,,,
+5920,,,,,,,,,"Omaha, NE-IA SMSA"
+5920,,,,19,155,,,,"Pottawattamie County, IA"
+5920,,,,31,55,,,,"Douglas County, NE"
+5920,,,,31,153,,,,"Sarpy County, NE"
+,,,,,,,,,
+5960,,,,,,,,,"Orlando, FL SMSA"
+5960,,,,12,95,,,,Orange County
+5960,,,,12,97,,,,Osceola County
+5960,,,,12,117,,,,Seminole County
+,,,,,,,,,
+5990,,,,,,,,,"Owensboro, KY SMSA"
+5990,,,,21,59,,,,Daviess County
+,,,,,,,,,
+6000,,49,,,,,,,"Oxnard-Simi Valley-Ventura, CA SMSA"
+6000,,49,,6,111,,,,Ventura County
+,,,,,,,,,
+6015,,,,,,,,,"Panama City, FL SMSA"
+6015,,,,12,5,,,,Bay County
+,,,,,,,,,
+6020,,,,,,,,,"Parkersburg-Marietta, WV-OH SMSA"
+6020,,,,39,167,,,,"Washington County, OH"
+6020,,,,54,105,,,,"Wirt County, WV"
+6020,,,,54,107,,,,"Wood County, WV"
+,,,,,,,,,
+6025,,,,,,,,,"Pascagoula-Moss Point, MS SMSA"
+6025,,,,28,59,,,,Jackson County
+,,,,,,,,,
+6040,,70,,,,,,,"Paterson-Clifton-Passaic, NJ SMSA"
+6040,,70,,34,31,,,,Passaic County
+,,,,,,,,,
+6080,,,,,,,,,"Pensacola, FL SMSA"
+6080,,,,12,33,,,,Escambia County
+6080,,,,12,113,,,,Santa Rosa County
+,,,,,,,,,
+6120,,,,,,,,,"Peoria, IL SMSA"
+6120,,,,17,143,,,,Peoria County
+6120,,,,17,179,,,,Tazewell County
+6120,,,,17,203,,,,Woodford County
+,,,,,,,,,
+6140,,,,,,,,,"Petersburg-Colonial Heights-Hopewell, VA SMSA"
+6140,,,,51,570,,,,Colonial Heights city
+6140,,,,51,53,,,,Dinwiddie County
+6140,,,,51,670,,,,Hopewell city
+6140,,,,51,730,,,,Petersburg city
+6140,,,,51,149,,,,Prince George County
+,,,,,,,,,
+6160,,77,,,,,,,"Philadelphia, PA-NJ SMSA"
+6160,,77,,34,5,,,,"Burlington County, NJ"
+6160,,77,,34,7,,,,"Camden County, NJ"
+6160,,77,,34,15,,,,"Gloucester County, NJ"
+6160,,77,,42,17,,,,"Bucks County, PA"
+6160,,77,,42,29,,,,"Chester  County, PA"
+6160,,77,,42,45,,,,"Delaware County, PA"
+6160,,77,,42,91,,,,"Montgomery County, PA"
+6160,,77,,42,101,,,,"Philadelphia County, PA"
+,,,,,,,,,
+6200,,,,,,,,,"Phoenix, AZ SMSA"
+6200,,,,4,13,,,,Maricopa County
+,,,,,,,,,
+6240,,,,,,,,,"Pine Bluff, AR SMSA"
+6240,,,,5,69,,,,Jefferson County
+,,,,,,,,,
+6280,,,,,,,,,"Pittsburgh, PA SMSA"
+6280,,,,42,3,,,,Allegheny County
+6280,,,,42,7,,,,Beaver County
+6280,,,,42,125,,,,Washington County
+6280,,,,42,129,,,,Westmoreland County
+,,,,,,,,,
+6320,,,,,,,,,"Pittsfield, MA SMSA"
+6320,,,,25,3,,,,Berkshire County (pt.)
+6320,,,,25,3,,555,,Adams town
+6320,,,,25,3,,13345,,Cheshire town
+6320,,,,25,3,,16180,,Dalton town
+6320,,,,25,3,,34340,,Lanesborough town
+6320,,,,25,3,,34655,,Lee town
+6320,,,,25,3,,34970,,Lenox town
+6320,,,,25,3,,53960,,Pittsfield city
+6320,,,,25,3,,67595,,Stockbridge town
+,,,,,,,,,
+6360,,,,,,,,,"Ponce, PR SMSA"
+6360,,,,72,75,,,,Juana Diaz Municipio
+6360,,,,72,113,,,,Ponce Municipio
+6360,,,,72,149,,,,Villalba Municipio
+,,,,,,,,,
+6400,,,,,,,,,"Portland, ME SMSA"
+6400,,,,23,5,,,,Cumberland County (pt.)
+6400,,,,23,5,,10180,,Cape Elizabeth town
+6400,,,,23,5,,15430,,Cumberland town
+6400,,,,23,5,,24495,,Falmouth town
+6400,,,,23,5,,26525,,Freeport town
+6400,,,,23,5,,28240,,Gorham town
+6400,,,,23,5,,60545,,Portland city
+6400,,,,23,5,,66145,,Scarborough town
+6400,,,,23,5,,71990,,South Portland city
+6400,,,,23,5,,82105,,Westbrook city
+6400,,,,23,5,,86025,,Windham town
+6400,,,,23,5,,87845,,Yarmouth town
+6400,,,,23,31,,,,York County (pt.)
+6400,,,,23,31,,55085,,Old Orchard Beach town
+6400,,,,23,31,,64675,,Saco city
+,,,,,,,,,
+6440,,,,,,,,,"Portland, OR-WA SMSA"
+6440,,,,41,5,,,,"Clackamas County, OR"
+6440,,,,41,51,,,,"Multnomah County, OR"
+6440,,,,41,67,,,,"Washington County, OR"
+6440,,,,53,11,,,,"Clark County, WA"
+,,,,,,,,,
+6450,,,,,,,,,"Portsmouth-Dover-Rochester, NH-ME SMSA"
+6450,,,,23,31,,,,"York County, ME (pt.)"
+6450,,,,23,31,,4720,,Berwick town
+6450,,,,23,31,,22955,,Eliot town
+6450,,,,23,31,,37270,,Kittery town
+6450,,,,23,31,,70030,,South Berwick town
+6450,,,,23,31,,87985,,York town
+6450,,,,33,15,,,,"Rockingham County, NH (pt.)"
+6450,,,,33,15,,31700,,Greenland town
+6450,,,,33,15,,33060,,Hampton town
+6450,,,,33,15,,50980,,New Castle town
+6450,,,,33,15,,51380,,Newfields town
+6450,,,,33,15,,51620,,Newington town
+6450,,,,33,15,,52340,,Newmarket town
+6450,,,,33,15,,54580,,North Hampton town
+6450,,,,33,15,,62900,,Portsmouth city
+6450,,,,33,15,,66180,,Rye town
+6450,,,,33,17,,,,Stafford County. NH (pt.)
+6450,,,,33,17,,3460,,Barrington town
+6450,,,,33,17,,18820,,Dover city
+6450,,,,33,17,,19700,,Durham town
+6450,,,,33,17,,26020,,Farmington town
+6450,,,,33,17,,41460,,Lee town
+6450,,,,33,17,,44820,,Madbury town
+6450,,,,33,17,,65140,,Rochester city
+6450,,,,33,17,,65540,,Rollinsford town
+6450,,,,33,17,,69940,,Somersworth city
+,,,,,,,,,
+6460,,,,,,,,,"Poughkeepsie, NY SMSA"
+6460,,,,36,27,,,,Dutchess County
+,,,,,,,,,
+6480,,80,,,,,,,"Providence-Warwick-Pawtucket, RI-MA SMSA"
+6480,,80,,25,5,,,,"Bristol County, MA (pt.)"
+6480,,80,,25,5,,2690,,Attleboro city
+6480,,80,,25,5,,46575,,North Attleborough town
+6480,,80,,25,5,,49970,,Norton town
+6480,,80,,25,5,,56375,,Rehoboth town
+6480,,80,,25,5,,60645,,Seekonk town
+6480,,80,,25,21,,,,"Norfolk County, MA (pt.)"
+6480,,80,,25,21,,54100,,Plainville town
+6480,,80,,25,27,,,,"Worcester County, MA (pt.)"
+6480,,80,,25,27,,6015,,Blackstone town
+6480,,80,,25,27,,41585,,Millville town
+6480,,80,,44,1,,,,"Bristol County, RI (pt.)"
+6480,,80,,44,1,,5140,,Barrington town
+6480,,80,,44,1,,9280,,Bristol town
+6480,,80,,44,1,,73760,,Warren town
+6480,,80,,44,3,,,,"Kent County, RI (pt.)"
+6480,,80,,44,3,,18640,,Coventry town
+6480,,80,,44,3,,22240,,East Greenwich town
+6480,,80,,44,3,,74300,,Warwick city
+6480,,80,,44,3,,78440,,West Warwick town
+6480,,80,,44,5,,,,"Newport County, RI (pt.)"
+6480,,80,,44,5,,36820,,Jamestown town
+6480,,80,,44,7,,,,"Providence County, RI (pt.)"
+6480,,80,,44,7,,11800,,Burrillville town
+6480,,80,,44,7,,14140,,Central Falls city
+6480,,80,,44,7,,19180,,Cranston city
+6480,,80,,44,7,,20080,,Cumberland town
+6480,,80,,44,7,,22960,,East Providence city
+6480,,80,,44,7,,37720,,Johnston town
+6480,,80,,44,7,,41500,,Lincoln town
+6480,,80,,44,7,,51760,,North Providence town
+6480,,80,,44,7,,52480,,North Smithfield town
+6480,,80,,44,7,,54640,,Pawtucket city
+6480,,80,,44,7,,59000,,Providence city
+6480,,80,,44,7,,64220,,Scituate town
+6480,,80,,44,7,,66200,,Smithfield town
+6480,,80,,44,7,,80780,,Woonsocket city
+6480,,80,,44,9,,,,"Washington County, RI (pt.)"
+6480,,80,,44,9,,48340,,Narragansett town
+6480,,80,,44,9,,51580,,North Kingstown town
+6480,,80,,44,9,,67460,,South Kingstown town
+,,,,,,,,,
+6520,,,,,,,,,"Provo-Orem, UT SMSA"
+6520,,,,49,49,,,,Utah County
+,,,,,,,,,
+6560,,,,,,,,,"Pueblo, CO SMSA"
+6560,,,,8,101,,,,Pueblo County
+,,,,,,,,,
+6600,,63,,,,,,,"Racine, WI SMSA"
+6600,,63,,55,101,,,,Racine County
+,,,,,,,,,
+6640,,,,,,,,,"Raleigh-Durham, NC SMSA"
+6640,,,,37,63,,,,Durham County
+6640,,,,37,135,,,,Orange County
+6640,,,,37,183,,,,Wake County
+,,,,,,,,,
+6680,,,,,,,,,"Reading, PA SMSA"
+6680,,,,42,11,,,,Berks County
+,,,,,,,,,
+6690,,,,,,,,,"Redding, CA SMSA"
+6690,,,,6,89,,,,Shasta County
+,,,,,,,,,
+6720,,,,,,,,,"Reno, NV SMSA"
+6720,,,,32,31,,,,Washoe County
+,,,,,,,,,
+6740,,,,,,,,,"Richland-Kennewick-Pasco, WA SMSA"
+6740,,,,53,5,,,,Benton County
+6740,,,,53,21,,,,Franklin County
+,,,,,,,,,
+6760,,,,,,,,,"Richmond, VA SMSA"
+6760,,,,51,36,,,,Charles City County
+6760,,,,51,41,,,,Chesterfield County
+6760,,,,51,75,,,,Goochland County
+6760,,,,51,85,,,,Hanover County
+6760,,,,51,87,,,,Henrico County
+6760,,,,51,127,,,,New Kent County
+6760,,,,51,145,,,,Powhatan County
+6760,,,,51,760,,,,Richmond city
+,,,,,,,,,
+6780,,49,,,,,,,"Riverside-San Bernardino-Ontario, CA SMSA"
+6780,,49,,6,65,,,,Riverside County
+6780,,49,,6,71,,,,San Bernardino County
+,,,,,,,,,
+6800,,,,,,,,,"Roanoke, VA SMSA"
+6800,,,,51,23,,,,Botetourt County
+6800,,,,51,45,,,,Craig County
+6800,,,,51,161,,,,Roanoke County
+6800,,,,51,770,,,,Roanoke city
+6800,,,,51,775,,,,Salem city
+,,,,,,,,,
+6820,,,,,,,,,"Rochester, MN SMSA"
+6820,,,,27,109,,,,Olmsted County
+,,,,,,,,,
+6840,,,,,,,,,"Rochester, NY SMSA"
+6840,,,,36,51,,,,Livingston County
+6840,,,,36,55,,,,Monroe County
+6840,,,,36,69,,,,Ontario County
+6840,,,,36,73,,,,Orleans County
+6840,,,,36,117,,,,Wayne County
+,,,,,,,,,
+6880,,,,,,,,,"Rockford, IL SMSA"
+6880,,,,17,7,,,,Boone County
+6880,,,,17,201,,,,Winnebago County
+,,,,,,,,,
+6885,,,,,,,,,"Rock Hill, SC SMSA"
+6885,,,,45,91,,,,York County
+,,,,,,,,,
+6920,,,,,,,,,"Sacramento, CA SMSA"
+6920,,,,6,61,,,,Placer County
+6920,,,,6,67,,,,Sacramento County
+6920,,,,6,113,,,,Yolo County
+,,,,,,,,,
+6960,,,,,,,,,"Saginaw, MI SMSA"
+6960,,,,26,145,,,,Saginaw County
+,,,,,,,,,
+6980,,,,,,,,,"St. Cloud, MN SMSA"
+6980,,,,27,9,,,,Benton County
+6980,,,,27,141,,,,Sherburne County
+6980,,,,27,145,,,,Stearns County
+,,,,,,,,,
+7000,,,,,,,,,"St. Joseph, MO SMSA"
+7000,,,,29,3,,,,Andrew County
+7000,,,,29,21,,,,Buchanan County
+,,,,,,,,,
+7040,,,,,,,,,"St. Louis, MO-IL SMSA"
+7040,,,,17,27,,,,"Clinton County, IL"
+7040,,,,17,119,,,,"Madison County, IL"
+7040,,,,17,133,,,,"Monroe County, IL"
+7040,,,,17,163,,,,"St. Clair County, IL"
+7040,,,,29,71,,,,"Franklin County, MO"
+7040,,,,29,99,,,,"Jefferson County, MO"
+7040,,,,29,183,,,,"St. Charles County, MO"
+7040,,,,29,189,,,,"St. Louis County, MO"
+7040,,,,29,510,,,,"St. Louis city, MO"
+,,,,,,,,,
+7080,,,,,,,,,"Salem, OR SMSA"
+7080,,,,41,47,,,,Marion County
+7080,,,,41,53,,,,Polk County
+,,,,,,,,,
+7120,,,,,,,,,"Salinas-Seaside-Monterey, CA SMSA"
+7120,,,,6,53,,,,Monterey County
+,,,,,,,,,
+7140,,,,,,,,,"Salisbury-Concord, NC SMSA"
+7140,,,,37,25,,,,Cabarrus County
+7140,,,,37,159,,,,Rowan County
+,,,,,,,,,
+7160,,,,,,,,,"Salt Lake City-Ogden, UT SMSA"
+7160,,,,49,11,,,,Davis County
+7160,,,,49,35,,,,Salt Lake County
+7160,,,,49,45,,,,Tooele County
+7160,,,,49,57,,,,Weber County
+,,,,,,,,,
+7200,,,,,,,,,"San Angelo, TX SMSA"
+7200,,,,48,451,,,,Tom Green County
+,,,,,,,,,
+7240,,,,,,,,,"San Antonio, TX SMSA"
+7240,,,,48,29,,,,Bexar County
+7240,,,,48,91,,,,Comal County
+7240,,,,48,187,,,,Guadalupe County
+,,,,,,,,,
+7320,,,,,,,,,"San Diego, CA SMSA"
+7320,,,,6,73,,,,San Diego County
+,,,,,,,,,
+7360,,84,,,,,,,"San Francisco-Oakland, CA SMSA"
+7360,,84,,6,1,,,,Alameda County
+7360,,84,,6,13,,,,Contra Costa County
+7360,,84,,6,41,,,,Marin County
+7360,,84,,6,75,,,,San Francisco County
+7360,,84,,6,81,,,,San Mateo County
+,,,,,,,,,
+7400,,84,,,,,,,"San Jose, CA SMSA"
+7400,,84,,6,85,,,,Santa Clara County
+,,,,,,,,,
+7440,,87,,,,,,,"San Juan, PR SMSA"
+7440,,87,,72,21,,,,Bayamon Municipio
+7440,,87,,72,29,,,,Canovanas Municipio
+7440,,87,,72,31,,,,Carolina Municipio
+7440,,87,,72,33,,,,Catano Municipio
+7440,,87,,72,61,,,,Guaynabo Municipio
+7440,,87,,72,87,,,,Loiza Municipio
+7440,,87,,72,127,,,,San Juan Municipio
+7440,,87,,72,137,,,,Toa Baja Municipio
+7440,,87,,72,139,,,,Trujillo Alto Municipio
+,,,,,,,,,
+7480,,,,,,,,,"Santa Barbara-Santa Maria-Lompoc, CA SMSA"
+7480,,,,6,83,,,,Santa Barbara County
+,,,,,,,,,
+7485,,,,,,,,,"Santa Cruz, CA SMSA"
+7485,,,,6,87,,,,Santa Cruz County
+,,,,,,,,,
+7500,,84,,,,,,,"Santa Rosa, CA SMSA"
+7500,,84,,6,97,,,,Sonoma County
+,,,,,,,,,
+7510,,,,,,,,,"Sarasota, FL SMSA"
+7510,,,,12,115,,,,Sarasota County
+,,,,,,,,,
+7520,,,,,,,,,"Savannah, GA SMSA"
+7520,,,,13,29,,,,Bryan County
+7520,,,,13,51,,,,Chatham County
+7520,,,,13,103,,,,Effingham County
+,,,,,,,,,
+7600,,91,,,,,,,"Seattle-Everett, WA SMSA"
+7600,,91,,53,33,,,,King County
+7600,,91,,53,61,,,,Snohomish County
+,,,,,,,,,
+7610,,,,,,,,,"Sharon, PA SMSA"
+7610,,,,42,85,,,,Mercer County
+,,,,,,,,,
+7620,,,,,,,,,"Sheboygan, WI SMSA"
+7620,,,,55,117,,,,Sheboygan County
+,,,,,,,,,
+7640,,,,,,,,,"Sherman-Denison, TX SMSA"
+7640,,,,48,181,,,,Grayson County
+,,,,,,,,,
+7680,,,,,,,,,"Shreveport, LA SMSA"
+7680,,,,22,15,,,,Bossier Parish
+7680,,,,22,17,,,,Caddo Parish
+7680,,,,22,119,,,,Webster Parish
+,,,,,,,,,
+7720,,,,,,,,,"Sioux City, IA-NE SMSA"
+7720,,,,19,193,,,,"Woodbury County, IA"
+7720,,,,31,43,,,,"Dakota County, NE"
+,,,,,,,,,
+7760,,,,,,,,,"Sioux Falls, SD SMSA"
+7760,,,,46,99,,,,Minnehaha County
+,,,,,,,,,
+7800,,,,,,,,,"South Bend, IN SMSA"
+7800,,,,18,99,,,,Marshall County
+7800,,,,18,141,,,,St.Joseph County
+,,,,,,,,,
+7840,,,,,,,,,"Spokane, WA SMSA"
+7840,,,,53,63,,,,Spokane County
+,,,,,,,,,
+7880,,,,,,,,,"Springfield, IL SMSA"
+7880,,,,17,129,,,,Menard County
+7880,,,,17,167,,,,Sangamon County
+,,,,,,,,,
+7920,,,,,,,,,"Springfield, MO SMSA"
+7920,,,,29,43,,,,Christian County
+7920,,,,29,77,,,,Greene County
+,,,,,,,,,
+7960,,32,,,,,,,"Springfield, OH SMSA"
+7960,,32,,39,21,,,,Champaign County
+7960,,32,,39,23,,,,Clark County
+,,,,,,,,,
+8000,,,,,,,,,"Springfield-Chicopee-Holyoke, MA-CT SMSA"
+8000,,,,9,13,,,,"Tolland County, CT (pt.)"
+8000,,,,9,13,,69220,,Somers town
+8000,,,,25,13,,,,"Hampden County, MA (pt.)"
+8000,,,,25,13,,800,,Agawam town
+8000,,,,25,13,,13660,,Chicopee city
+8000,,,,25,13,,19645,,East Longmeadow town
+8000,,,,25,13,,28075,,Hampden town
+8000,,,,25,13,,30840,,Holyoke city
+8000,,,,25,13,,36300,,Longmeadow town
+8000,,,,25,13,,37175,,Ludlow town
+8000,,,,25,13,,42145,,Monson town
+8000,,,,25,13,,52105,,Palmer town
+8000,,,,25,13,,65825,,Southwick town
+8000,,,,25,13,,67000,,Springfield city
+8000,,,,25,13,,76030,,Westfield city
+8000,,,,25,13,,77850,,West Springfield town
+8000,,,,25,13,,79740,,Wilbraham town
+8000,,,,25,15,,,,"Hampshire County, MA (pt.)"
+8000,,,,25,15,,4825,,Belchertown town
+8000,,,,25,15,,19330,,Easthampton town
+8000,,,,25,15,,26535,,Granby town
+8000,,,,25,15,,27690,,Hadley town
+8000,,,,25,15,,29265,,Hatfield town
+8000,,,,25,15,,46330,,Northampton city
+8000,,,,25,15,,62745,,Southampton town
+8000,,,,25,15,,64145,,South Hadley town
+8000,,,,25,27,,,,"Worcester County, MA (pt.)"
+8000,,,,25,27,,73090,,Warren town
+,,,,,,,,,
+8040,,70,,,,,,,"Stamford, CT SMSA"
+8040,,70,,9,1,,,,Fairfield County (pt.)
+8040,,70,,9,1,,18850,,Darien town
+8040,,70,,9,1,,33620,,Greenwich town
+8040,,70,,9,1,,50580,,New Canaan town
+8040,,70,,9,1,,73000,,Stamford city
+,,,,,,,,,
+8050,,,,,,,,,"State College, PA SMSA"
+8050,,,,42,27,,,,Centre County
+,,,,,,,,,
+8080,,,,,,,,,"Steubenville-Weirton, OH-WV SMSA"
+8080,,,,39,81,,,,"Jefferson County, OH"
+8080,,,,54,9,,,,"Brooke County, WV"
+8080,,,,54,29,,,,"Hancock County, WV"
+,,,,,,,,,
+8120,,,,,,,,,"Stockton, CA SMSA"
+8120,,,,6,77,,,,San Joaquin County
+,,,,,,,,,
+8160,,,,,,,,,"Syracuse, NY SMSA"
+8160,,,,36,53,,,,Madison County
+8160,,,,36,67,,,,Onondaga County
+8160,,,,36,75,,,,Oswego County
+,,,,,,,,,
+8200,,91,,,,,,,"Tacoma, WA SMSA"
+8200,,91,,53,53,,,,Pierce County
+,,,,,,,,,
+8240,,,,,,,,,"Tallahassee, FL SMSA"
+8240,,,,12,73,,,,Leon County
+8240,,,,12,129,,,,Wakulla County
+,,,,,,,,,
+8280,,,,,,,,,"Tampa-St. Petersburg, FL SMSA"
+8280,,,,12,57,,,,Hillsborough County
+8280,,,,12,101,,,,Pasco County
+8280,,,,12,103,,,,Pinellas County
+,,,,,,,,,
+8320,,,,,,,,,"Terre Haute, IN SMSA"
+8320,,,,18,21,,,,Clay County
+8320,,,,18,153,,,,Sullivan County
+8320,,,,18,165,,,,Vermillion County
+8320,,,,18,167,,,,Vigo County
+,,,,,,,,,
+8360,,,,,,,,,"Texarkana, TX-Texarkana, AR SMSA"
+8360,,,,5,81,,,,"Little River County, AR"
+8360,,,,5,91,,,,"Miller County, AR"
+8360,,,,48,37,,,,"Bowie County, TX"
+,,,,,,,,,
+8400,,,,,,,,,"Toledo, OH-MI SMSA"
+8400,,,,26,115,,,,"Monroe County, MI"
+8400,,,,39,51,,,,"Fulton County, OH"
+8400,,,,39,95,,,,"Lucas County, OH"
+8400,,,,39,123,,,,"Ottawa County, OH"
+8400,,,,39,173,,,,"Wood County, OH"
+,,,,,,,,,
+8440,,,,,,,,,"Topeka, KS SMSA"
+8440,,,,20,87,,,,Jefferson County
+8440,,,,20,139,,,,Osage County
+8440,,,,20,177,,,,Shawnee County
+,,,,,,,,,
+8480,,77,,,,,,,"Trenton, NJ SMSA"
+8480,,77,,34,21,,,,Mercer County
+,,,,,,,,,
+8520,,,,,,,,,"Tucson, AZ SMSA"
+8520,,,,4,19,,,,Pima County
+,,,,,,,,,
+8560,,,,,,,,,"Tulsa, OK SMSA"
+8560,,,,40,37,,,,Creek County
+8560,,,,40,97,,,,Mayes County
+8560,,,,40,113,,,,Osage County
+8560,,,,40,131,,,,Rogers County
+8560,,,,40,143,,,,Tulsa County
+8560,,,,40,145,,,,Wagoner County
+,,,,,,,,,
+8600,,,,,,,,,"Tuscaloosa, AL SMSA"
+8600,,,,1,125,,,,Tuscaloosa County
+,,,,,,,,,
+8640,,,,,,,,,"Tyler, TX SMSA"
+8640,,,,48,423,,,,Smith County
+,,,,,,,,,
+8680,,,,,,,,,"Utica-Rome, NY SMSA"
+8680,,,,36,43,,,,Herkimer County
+8680,,,,36,65,,,,Oneida County
+,,,,,,,,,
+8720,,84,,,,,,,"Vallejo-Fairfield-Napa, CA SMSA"
+8720,,84,,6,55,,,,Napa County
+8720,,84,,6,95,,,,Solano County
+,,,,,,,,,
+8750,,,,,,,,,"Victoria, TX SMSA"
+8750,,,,48,469,,,,Victoria County
+,,,,,,,,,
+8760,,,,,,,,,"Vineland-Millville-Bridgeton, NJ SMSA"
+8760,,,,34,11,,,,Cumberland County
+,,,,,,,,,
+8780,,,,,,,,,"Visalia-Tulare-Porterville, CA SMSA"
+8780,,,,6,107,,,,Tulare County
+,,,,,,,,,
+8800,,,,,,,,,"Waco, TX SMSA"
+8800,,,,48,309,,,,McLennan County
+,,,,,,,,,
+8840,,,,,,,,,"Washington, DC-MD-VA SMSA"
+8840,,,,11,1,,,,District of Columbia
+8840,,,,24,17,,,,"Charles County, MD"
+8840,,,,24,31,,,,"Montgomery County, MD"
+8840,,,,24,33,,,,"Prince George's County, MD"
+8840,,,,51,510,,,,"Alexandria city, VA"
+8840,,,,51,13,,,,"Arlington County, VA"
+8840,,,,51,59,,,,"Fairfax County, VA"
+8840,,,,51,600,,,,"Fairfax city, VA"
+8840,,,,51,610,,,,"Falls Church city, VA"
+8840,,,,51,107,,,,"Loudoun County, VA"
+8840,,,,51,683,,,,"Manassas city, VA"
+8840,,,,51,685,,,,"Manassas Park city, VA"
+8840,,,,51,153,,,,"Prince William County, VA"
+,,,,,,,,,
+8880,,,,,,,,,"Waterbury, CT SMSA"
+8880,,,,9,5,,,,Litchfield County (pt.)
+8880,,,,9,5,,75730,,Thomaston town
+8880,,,,9,5,,80490,,Watertown town
+8880,,,,9,5,,87910,,Woodbury town
+8880,,,,9,9,,,,New Haven County (pt.)
+8880,,,,9,9,,3250,,Beacon Falls town
+8880,,,,9,9,,14160,,Cheshire town
+8880,,,,9,9,,46940,,Middlebury town
+8880,,,,9,9,,49880,,Naugatuck borough
+8880,,,,9,9,,62290,,Prospect town
+8880,,,,9,9,,69640,,Southbury town
+8880,,,,9,9,,80000,,Waterbury city
+8880,,,,9,9,,87560,,Wolcott town
+,,,,,,,,,
+8920,,,,,,,,,"Waterloo-Cedar Falls, IA SMSA"
+8920,,,,19,13,,,,Black Hawk County
+,,,,,,,,,
+8940,,,,,,,,,"Wausau, WI SMSA"
+8940,,,,55,73,,,,Marathon County
+,,,,,,,,,
+8960,,,,,,,,,"West Palm Beach-Boca Raton, FL SMSA"
+8960,,,,12,99,,,,Palm Beach County
+,,,,,,,,,
+9000,,,,,,,,,"Wheeling, WV-OH SMSA"
+9000,,,,39,13,,,,"Belmont County, OH"
+9000,,,,54,51,,,,"Marshall County, WV"
+9000,,,,54,69,,,,"Ohio County, WV"
+,,,,,,,,,
+9040,,,,,,,,,"Wichita, KS SMSA"
+9040,,,,20,15,,,,Butler County
+9040,,,,20,173,,,,Sedgwick County
+,,,,,,,,,
+9080,,,,,,,,,"Wichita Falls, TX SMSA"
+9080,,,,48,77,,,,Clay County
+9080,,,,48,485,,,,Wichita County
+,,,,,,,,,
+9140,,,,,,,,,"Williamsport, PA SMSA"
+9140,,,,42,81,,,,Lycoming County
+,,,,,,,,,
+9160,,77,,,,,,,"Wilmington, DE-NJ-MD SMSA"
+9160,,77,,10,3,,,,"New Castle County, DE"
+9160,,77,,24,15,,,,"Cecil County, MD"
+9160,,77,,34,33,,,,"Salem County, NJ"
+,,,,,,,,,
+9200,,,,,,,,,"Wilmington, NC SMSA"
+9200,,,,37,19,,,,Brunswick County
+9200,,,,37,129,,,,New Hanover County
+,,,,,,,,,
+9240,,,,,,,,,"Worcester, MA SMSA"
+9240,,,,25,27,,,,Worcester County (pt.)
+9240,,,,25,27,,2760,,Auburn town
+9240,,,,25,27,,5490,,Berlin town
+9240,,,,25,27,,7525,,Boylston town
+9240,,,,25,27,,9105,,Brookfield town
+9240,,,,25,27,,12715,,Charlton town
+9240,,,,25,27,,18560,,East Brookfield town
+9240,,,,25,27,,26430,,Grafton town
+9240,,,,25,27,,30560,,Holden town
+9240,,,,25,27,,34795,,Leicester town
+9240,,,,25,27,,41340,,Millbury town
+9240,,,,25,27,,46820,,Northborough town
+9240,,,,25,27,,46925,,Northbridge town
+9240,,,,25,27,,47135,,North Brookfield town
+9240,,,,25,27,,51825,,Oxford town
+9240,,,,25,27,,52420,,Paxton town
+9240,,,,25,27,,61800,,Shrewsbury town
+9240,,,,25,27,,66105,,Spencer town
+9240,,,,25,27,,67385,,Sterling town
+9240,,,,25,27,,68610,,Sutton town
+9240,,,,25,27,,71480,,Upton town
+9240,,,,25,27,,71620,,Uxbridge town
+9240,,,,25,27,,73895,,Webster town
+9240,,,,25,27,,75015,,Westborough town
+9240,,,,25,27,,75155,,West Boylston town
+9240,,,,25,27,,82000,,Worcester city
+,,,,,,,,,
+9260,,,,,,,,,"Yakima, WA SMSA"
+9260,,,,53,77,,,,Yakima County
+,,,,,,,,,
+9280,,,,,,,,,"York, PA SMSA"
+9280,,,,42,1,,,,Adams County
+9280,,,,42,133,,,,York County
+,,,,,,,,,
+9320,,,,,,,,,"Youngstown-Warren, OH SMSA"
+9320,,,,39,99,,,,Mahoning County
+9320,,,,39,155,,,,Trumbull County
+,,,,,,,,,
+9340,,,,,,,,,"Yuba City, CA SMSA"
+9340,,,,6,101,,,,Sutter County
+9340,,,,6,115,,,,Yuba County
