@@ -1,13 +1,13 @@
-#### Compare 1970 SMSA and 2010 CBSA D and xPx
-#### Hypersegregation Project
+---
+title: "Comparing Dissmilarity Indices between CBSA and Historical Delineations"
+output: html_document
+---
 
+```{r setup, include=FALSE}
 #libraries
 library(tidyverse)
 library(haven)
 library(OasisR)
-
-#setwd to compare-seg repository
-setwd("R:/Project/Hypersegregation/compare-seg")
 
 #load in NCDB to extract CBSAs with (NB: hard-coded references to Paper 1/Data)
 ncdb_vanilla <- read_dta("R:/Project/Hypersegregation/Paper 1/Data/NCDB_1970_2010.dta")
@@ -21,9 +21,12 @@ msa2000 <- read_csv("input/99mfips.csv")
 
 #not in operator
 '%!in%' <- function(x,y)!('%in%'(x,y))
+```
 
-#### A. Reshape crosswalk tables a little -------------------------------------
+#### A. Reshape crosswalk tables a little
 
+```{r Part A: transform data}
+#1970 SMSA definitions
 msa1970 <- msa1970 %>% #wipe out the cases for the MSA alone --- they are coded
   filter(!is.na(STATE)) %>% #as missing STATE IDs
   mutate(TOWN = X6) %>% #establish colname for TOWN field
@@ -38,6 +41,7 @@ msa1970 <- msa1970 %>% #wipe out the cases for the MSA alone --- they are coded
            length(unique(SMSA70)) == 1) %>% #and keep all rows where there's only one SMSA code for the combination (i.e. one county, one SMSA)
   summarize(MSA70 = unique(SMSA70)) #for each combination, the summary value is the unique (i.e. only) code present
 
+#1980 SMSA definitions
 msa1980 <- msa1980 %>%
   filter(!is.na(STATE)) %>%
   mutate(TOWN = X8) %>%
@@ -52,6 +56,7 @@ msa1980 <- msa1980 %>%
            length(unique(SMSA80)) == 1) %>%
   summarize(MSA80 = unique(SMSA80)) 
 
+#1990 PMSA definitions
 msa1990 <- msa1990 %>%
   filter(!is.na(STATE)) %>%
   mutate(TOWN = X12) %>%
@@ -66,6 +71,7 @@ msa1990 <- msa1990 %>%
            length(unique(PMSA90)) == 1) %>%
   summarize(MSA90 = ifelse(is.na(unique(PMSA90)), unique(CMSA90), unique(PMSA90))) 
 
+#2000 PMSA definitions
 msa2000 <- msa2000 %>%
   filter(!is.na(STATE)) %>%
   mutate(TOWN = X12) %>%
@@ -80,15 +86,18 @@ msa2000 <- msa2000 %>%
            length(unique(PMSA99)) == 1) %>%
   summarize(MSA00 = ifelse(is.na(unique(PMSA99)), unique(CMSA99), unique(PMSA99))) 
 
+#Crosswalk table of tracts with accompanying higher level IDs
 ncdb_cw <- ncdb_vanilla %>%
   filter(CBSA != "") %>%
   mutate(STATE = str_pad(STATE, 2, side = "left", pad = "0"),
          COUNTY = str_pad(COUNTY, 3, side = "left", pad = "0"),
          TOWN = str_pad(COUSUB, 5, side = "left", pad = "0"),
          FIPS = paste0(STATE, COUNTY))
+```
 
 #### B. Compile the Crosswalk table using munged OMB tables and NCDB ----------
 
+```{r Part B: Compile transformed objects}
 #join MSA vals to NCDB cases outside of New England by COUNTY X STATE
 ncdb_nonNE <- left_join(ncdb_cw %>% filter(STATE %!in% c("09", "23", "25", "33", "44")),
                         msa1970 %>% filter(STATE %!in% c("09", "23", "25", "33", "44")) %>% select(-TOWN))
@@ -118,9 +127,11 @@ ncdb_NE <- left_join(ncdb_NE,
 #join NE and non-NE tables together
 ncdb_cw <- bind_rows(ncdb_nonNE, ncdb_NE) %>%
   arrange(STATE, COUNTY)
+```
 
 #### C. Compute segregation measures from NCDB --------------------------------
 
+```{Part C: Compute Dissimilarity index}
 ncdb_cw <- ncdb_cw %>%
   ungroup() %>%
   distinct(GEO2010, STATE, COUNTY, TOWN, MSA70, MSA80, MSA90, MSA00, CBSA) #really just need tract ID + MSA IDs
@@ -180,17 +191,11 @@ seg_D <- left_join(seg_D, seg_2000msa)
 seg_D <- left_join(seg_D, seg_1990msa)
 seg_D <- left_join(seg_D, seg_1980msa)
 seg_D <- left_join(seg_D, seg_1970msa)
+```
 
-glimpse(seg_D)
-summary(seg_D)
+#### D. Analyze differences in measure between operational strategies
 
-#seg_D <- seg_D %>%
-#  filter(!is.na(MSA70)) #restrict to ctys and cty subs that existed in 1970 MSAs
-
-#NB: remaining SMSA70 rows with NAs for 1970 have 0 population counts, likely a suppression issue
-
-#### D. Analyze differences in measure between operational strategies ---------
-
+```{r Part D: Analysis}
 #number/prop of historical MSA counties in CBSA by decade
 cty_sum <- seg_cw %>%
   group_by(CBSA) %>%
@@ -301,8 +306,11 @@ seg_D %>%
             propSame = nSame/nTot,
             propWithin_01 = nWithin_01/nTot,
             propWithin_05 = nWithin_05/nTot) 
+```
 
+#### E. Visualize differences between measurements
 
+```{r Part E: Visualizations}
 #AvP-esque scatterplots
 ggplot(seg_D, aes(x = MSA70_D_1970, y = CBSA_D_1970)) +
   facet_grid(~ NEWENG) +
@@ -310,9 +318,7 @@ ggplot(seg_D, aes(x = MSA70_D_1970, y = CBSA_D_1970)) +
   geom_abline(slope = 1, intercept = 0) +
   theme_minimal() +
   scale_x_continuous(limits = c(0, 1)) +
-  scale_y_continuous(limits = c(0, 1)) +
-  ggsave(filename = "output/1970MSA_2010CBSA_1970D.png",
-         width = 8, height = 6, dpi = 300)
+  scale_y_continuous(limits = c(0, 1))
 
 ggplot(seg_D, aes(x = MSA80_D_1980, y = CBSA_D_1980)) +
   facet_grid(~ NEWENG) +
@@ -320,9 +326,7 @@ ggplot(seg_D, aes(x = MSA80_D_1980, y = CBSA_D_1980)) +
   geom_abline(slope = 1, intercept = 0) +
   theme_minimal() +
   scale_x_continuous(limits = c(0, 1)) +
-  scale_y_continuous(limits = c(0, 1)) +
-  ggsave(filename = "output/1980MSA_2010CBSA_1980D.png",
-         width = 8, height = 6, dpi = 300)
+  scale_y_continuous(limits = c(0, 1))
 
 ggplot(seg_D, aes(x = MSA90_D_1990, y = CBSA_D_1990)) +
   facet_grid(~ NEWENG) +
@@ -330,9 +334,7 @@ ggplot(seg_D, aes(x = MSA90_D_1990, y = CBSA_D_1990)) +
   geom_abline(slope = 1, intercept = 0) +
   theme_minimal() +
   scale_x_continuous(limits = c(0, 1)) +
-  scale_y_continuous(limits = c(0, 1)) +
-  ggsave(filename = "output/1990MSA_2010CBSA_1990D.png",
-         width = 8, height = 6, dpi = 300)
+  scale_y_continuous(limits = c(0, 1))
 
 ggplot(seg_D, aes(x = MSA00_D_2000, y = CBSA_D_2000)) +
   facet_grid(~ NEWENG) +
@@ -340,6 +342,6 @@ ggplot(seg_D, aes(x = MSA00_D_2000, y = CBSA_D_2000)) +
   geom_abline(slope = 1, intercept = 0) +
   theme_minimal() +
   scale_x_continuous(limits = c(0, 1)) +
-  scale_y_continuous(limits = c(0, 1)) +
-  ggsave(filename = "output/2000MSA_2010CBSA_2000D.png",
-         width = 8, height = 6, dpi = 300)
+  scale_y_continuous(limits = c(0, 1))
+```
+
