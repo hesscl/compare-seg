@@ -10,8 +10,10 @@ library(OasisR)
 setwd("R:/Project/Hypersegregation/compare-seg")
 
 #load in NCDB to extract CBSAs with (NB: hard-coded references to Paper 1/Data)
-ncdb_vanilla <- read_dta("R:/Project/Hypersegregation/Paper 1/Data/NCDB_1970_2010.dta")
-ncdb_interp <- read_dta("R:/Project/Hypersegregation/Paper 1/Data/wide_tract_metro_interp_2015.dta")
+#ncdb_vanilla <- read_dta("R:/Project/Hypersegregation/Paper 1/Data/NCDB_1970_2010.dta")
+#ncdb_interp <- read_dta("R:/Project/Hypersegregation/Paper 1/Data/wide_tract_metro_interp_2015.dta")
+#save(ncdb_interp, ncdb_vanilla, file = "./ncdb_workspace.RData")
+load(file = "./ncdb_workspace.RData")
 
 #load in OMB definition file to use as crosswalk
 msa1970 <- read_csv("input/71mfips.csv") #delimited county-MSA data for
@@ -90,29 +92,29 @@ ncdb_cw <- ncdb_vanilla %>%
 #### B. Compile the Crosswalk table using munged OMB tables and NCDB ----------
 
 #join MSA vals to NCDB cases outside of New England by COUNTY X STATE
-ncdb_nonNE <- left_join(ncdb_cw %>% filter(STATE %!in% c("09", "23", "25", "33", "44")),
-                        msa1970 %>% filter(STATE %!in% c("09", "23", "25", "33", "44")) %>% select(-TOWN))
+ncdb_nonNE <- left_join(ncdb_cw %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")),
+                        msa1970 %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")) %>% select(-TOWN))
 
-ncdb_nonNE <- left_join(ncdb_nonNE, #NB: Maine (STATE==50) has a MSA as of 1980
-                        msa1980 %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")) %>% select(-TOWN))
+ncdb_nonNE <- left_join(ncdb_nonNE %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")),
+                        msa1980 %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")) %>% select(-TOWN)) 
 
-ncdb_nonNE <- left_join(ncdb_nonNE,
-                        msa1990 %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")) %>% select(-TOWN))
+ncdb_nonNE <- left_join(ncdb_nonNE %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")),
+                        msa1990 %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")) %>% select(-TOWN)) 
 
-ncdb_nonNE <- left_join(ncdb_nonNE,
-                        msa2000 %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")) %>% select(-TOWN))
+ncdb_nonNE <- left_join(ncdb_nonNE %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")),
+                        msa2000 %>% filter(STATE %!in% c("09", "23", "25", "33", "44", "50")) %>% select(-TOWN)) 
 
 #join MSA vals to NCDB cases inside New England by COUNTY X STATE X TOWN
-ncdb_NE <- left_join(ncdb_cw %>% filter(STATE %in% c("09", "23", "25", "33", "44")),
-                     msa1970 %>% filter(STATE %in% c("09", "23", "25", "33", "44")))
+ncdb_NE <- left_join(ncdb_cw %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")),
+                     msa1970 %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")))
 
-ncdb_NE <- left_join(ncdb_NE,
+ncdb_NE <- left_join(ncdb_NE %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")),
                      msa1980 %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")))
 
-ncdb_NE <- left_join(ncdb_NE,
+ncdb_NE <- left_join(ncdb_NE %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")),
                      msa1990 %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")))
 
-ncdb_NE <- left_join(ncdb_NE,
+ncdb_NE <- left_join(ncdb_NE %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")),
                      msa2000 %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")))
 
 #join NE and non-NE tables together
@@ -172,7 +174,7 @@ seg_2010cbsa <- ncdb %>%
 #2. NAs for tract population at t -> NA for dissimilarity at t
 
 seg_cw <- ncdb_cw %>%
-  distinct(STATE, COUNTY, TOWN, MSA70, MSA80, MSA90, MSA00, CBSA) %>%
+  distinct(GEO2010, STATE, COUNTY, TOWN, MSA70, MSA80, MSA90, MSA00, CBSA) %>%
   mutate(NEWENG = STATE %in% c("09", "23", "25", "33", "44", "50"))
 
 seg_D <- left_join(seg_cw, seg_2010cbsa)  
@@ -306,7 +308,7 @@ seg_D %>%
 #AvP-esque scatterplots
 ggplot(seg_D, aes(x = MSA70_D_1970, y = CBSA_D_1970)) +
   facet_grid(~ NEWENG) +
-  geom_point() +
+  geom_bin2d() +
   geom_abline(slope = 1, intercept = 0) +
   theme_minimal() +
   scale_x_continuous(limits = c(0, 1)) +
@@ -316,7 +318,7 @@ ggplot(seg_D, aes(x = MSA70_D_1970, y = CBSA_D_1970)) +
 
 ggplot(seg_D, aes(x = MSA80_D_1980, y = CBSA_D_1980)) +
   facet_grid(~ NEWENG) +
-  geom_point() +
+  geom_bin2d() +
   geom_abline(slope = 1, intercept = 0) +
   theme_minimal() +
   scale_x_continuous(limits = c(0, 1)) +
@@ -326,7 +328,7 @@ ggplot(seg_D, aes(x = MSA80_D_1980, y = CBSA_D_1980)) +
 
 ggplot(seg_D, aes(x = MSA90_D_1990, y = CBSA_D_1990)) +
   facet_grid(~ NEWENG) +
-  geom_point() +
+  geom_bin2d() +
   geom_abline(slope = 1, intercept = 0) +
   theme_minimal() +
   scale_x_continuous(limits = c(0, 1)) +
@@ -336,7 +338,7 @@ ggplot(seg_D, aes(x = MSA90_D_1990, y = CBSA_D_1990)) +
 
 ggplot(seg_D, aes(x = MSA00_D_2000, y = CBSA_D_2000)) +
   facet_grid(~ NEWENG) +
-  geom_point() +
+  geom_bin2d() +
   geom_abline(slope = 1, intercept = 0) +
   theme_minimal() +
   scale_x_continuous(limits = c(0, 1)) +
