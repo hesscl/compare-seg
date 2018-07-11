@@ -19,7 +19,7 @@ The goal of this research is to assess the sensitivity of measuring historical m
 
 <br>
 
-This problem is conceptually similar to when census tract definitions (a common areal summary for neighborhoods) change between data collections. In this case, differences between the two measurements of total population reflect both _population change_ (which is likely a quantity of interest) but also _error-in-variables_ created by summarizing overlapping but not identical areas for which persons can exist. The typical approach is to normalize boundaries such that the same set of space is aggregated across different points in time. The units themselves may still be somewhat arbitrary in how they divide up space so long as they are comparable.
+This problem is conceptually similar to when census tract definitions (a common areal summary for neighborhoods) change between data collections. In this case, differences between the two measurements of total population reflect both _population change_ (which is likely a quantity of interest) but also _measurement error_ created by summarizing overlapping but not identical areas for which persons can exist. The typical approach is to normalize boundaries such that the same set of space is aggregated across different points in time. The units themselves may still be somewhat arbitrary in how they divide up space so long as they are comparable.
 
 <br>
 <hr>
@@ -48,7 +48,7 @@ msa1990 <- read_csv("input/90mfips.csv")
 msa2000 <- read_csv("input/99mfips.csv")
 ```
 
-Lastly, we save a function in the form of an operator like `>` and `==` with `%!in%`, which returns `TRUE` when LHS values being evaluated are not found in a value or set of values on the RHS. This is useful later for filtering places that are not in New England given the data differences for MSAs in NE states.
+Lastly, we save a function in the form of an operator like `>` and `==` with `%!in%`, which returns `TRUE` when LHS values being evaluated are not found in a value or set of values on the RHS. This is useful later for filtering places that are not in New England given the data differences for MSAs in these states.
 
 ```{r NOT IN}
 #not in operator
@@ -289,9 +289,18 @@ After computing individual tables with MSA codes and dissimilarity we join the h
 
 ```{r Compile seg_D}
 #compute crosswalk table of counties according to the 
-seg_cw <- ncdb_cw %>%
-  distinct(STATE, COUNTY, COUSUB, MSA70, MSA80, MSA90, MSA00, CBSA) %>%
-  mutate(NEWENG = STATE %in% c("09", "23", "25", "33", "44", "50"))
+seg_cw_NE <- ncdb_cw %>%
+  mutate(NEWENG = STATE %in% c("09", "23", "25", "33", "44", "50")) %>%
+  filter(NEWENG) %>%
+  distinct(STATE, COUNTY, COUSUB, MSA70, MSA80, MSA90, MSA00, CBSA, NEWENG)
+
+seg_cw_nonNE <- ncdb_cw %>%
+  mutate(NEWENG = STATE %in% c("09", "23", "25", "33", "44", "50")) %>%
+  filter(!NEWENG) %>%
+  mutate(COUSUB = NA) %>% #remove variation in this to allow
+  distinct(STATE, COUNTY, COUSUB, MSA70, MSA80, MSA90, MSA00, CBSA, NEWENG)
+
+seg_cw <- bind_rows(seg_cw_NE, seg_cw_nonNE)
 
 #save crosswalk file to storage
 write_csv(seg_cw, "./output/county_msa_cbsa_crosswalk.csv")
@@ -312,8 +321,8 @@ seg_D <- left_join(seg_D, seg_1970msa)
 
 ```{r Analysis, warning=FALSE}
 #number/prop of historical MSA counties in CBSA by decade
-tract_sum <- seg_cw %>%
-  group_by(CBSA) %>%
+cbsa_sum <- seg_D %>%
+  group_by(CBSA, NEWENG) %>%
   summarize(nCBSA = n(),
             nMSA70 = sum(!is.na(MSA70)),
             nMSA80 = sum(!is.na(MSA80)),
@@ -326,7 +335,7 @@ tract_sum <- seg_cw %>%
          micro = (nMSA70 + nMSA80 + nMSA90 + nMSA00) == 0) #if county is not associated with metro area code through 70-00, must be micropolitan MSA cty added in 2010
 
 #join summaries about each CBSA's counties back to seg_D by each county's CBSA code
-seg_D <- left_join(seg_D, tract_sum)
+seg_D <- left_join(seg_D, cbsa_sum)
 
 #set filter for time (i.e. same MSAs across time or add in by decade)
 seg_D <- seg_D %>%
@@ -337,12 +346,13 @@ seg_D$NEWENG <- factor(seg_D$NEWENG)
 levels(seg_D$NEWENG) <- c("Outside N.E.", "New England")
 ```
 
-### Share of historical MSA in current CBSAs
+### Share of historical MSA counties in current CBSAs
 
 #### 1970
 
 ```{r Tables Prop Cty 70, message=FALSE, results="asis"}
-seg_D %>%
+cbsa_sum %>%
+  filter(!micro) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop70) %>%
   skim() %>%
@@ -352,7 +362,8 @@ seg_D %>%
 #### 1980
 
 ```{r Tables Prop Cty 80, message=FALSE, results="asis"}
-seg_D %>%
+cbsa_sum %>%
+  filter(!micro) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop80) %>%
   skim() %>%
@@ -362,7 +373,8 @@ seg_D %>%
 #### 1990
 
 ```{r Tables Prop Cty 90, message=FALSE, results="asis"}
-seg_D %>%
+cbsa_sum %>%
+  filter(!micro) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop90) %>%
   skim() %>%
@@ -372,7 +384,8 @@ seg_D %>%
 #### 2000
 
 ```{r Tables Prop Cty 00, message=FALSE, results="asis"}
-seg_D %>%
+cbsa_sum %>%
+  filter(!micro) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop00) %>%
   skim() %>%
