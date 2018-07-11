@@ -346,51 +346,65 @@ seg_D$NEWENG <- factor(seg_D$NEWENG)
 levels(seg_D$NEWENG) <- c("Outside N.E.", "New England")
 ```
 
+<br>
+<hr>
+<br>
+
 ### Share of historical MSA counties in current CBSAs
 
 #### 1970
 
 ```{r Tables Prop Cty 70, message=FALSE, results="asis"}
 cbsa_sum %>%
-  filter(!micro) %>%
+  filter(!micro, nMSA70 > 0) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop70) %>%
   skim() %>%
   skimr::kable()
 ```
 
+<br>
+
 #### 1980
 
 ```{r Tables Prop Cty 80, message=FALSE, results="asis"}
 cbsa_sum %>%
-  filter(!micro) %>%
+  filter(!micro, nMSA80 > 0) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop80) %>%
   skim() %>%
   skimr::kable()
 ```
 
+<br>
+
 #### 1990
 
 ```{r Tables Prop Cty 90, message=FALSE, results="asis"}
 cbsa_sum %>%
-  filter(!micro) %>%
+  filter(!micro, nMSA90 > 0) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop90) %>%
   skim() %>%
   skimr::kable()
 ```
 
+<br>
+
 #### 2000
 
 ```{r Tables Prop Cty 00, message=FALSE, results="asis"}
 cbsa_sum %>%
-  filter(!micro) %>%
+  filter(!micro, nMSA00 > 0) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop00) %>%
   skim() %>%
   skimr::kable()
 ```
+
+<br>
+<hr>
+<br>
 
 ### Correlation of D using historical and CBSA delineations
 
@@ -402,6 +416,10 @@ knitr::kable(seg_D %>%
             cor90 = cor(MSA90_D_1990, CBSA_D_1990, use = "complete.obs"),
             cor00 = cor(MSA00_D_2000, CBSA_D_2000, use = "complete.obs")))
 ```
+
+<br>
+<hr>
+<br>
 
 ### Summary statistics of D distributions
 
@@ -415,6 +433,8 @@ seg_D %>%
   skimr::kable()
 ```
 
+<br>
+
 #### 1980
 
 ```{r Tables Summary 80, message=FALSE, results="asis"}
@@ -424,6 +444,8 @@ seg_D %>%
   skim() %>%
   skimr::kable()
 ```
+
+<br>
 
 #### 1990
 
@@ -435,6 +457,8 @@ seg_D %>%
   skimr::kable()
 ```
 
+<br>
+
 #### 2000
 
 ```{r Tables Summary 00, message=FALSE, results="asis"}
@@ -444,6 +468,10 @@ seg_D %>%
   skim() %>%
   skimr::kable()
 ```
+
+<br>
+<hr>
+<br>
 
 ### Counties with exact same and within value for MSA and CBSA measures
 
@@ -465,6 +493,8 @@ knitr::kable(seg_D %>%
             propWithin_05 = nWithin_05/nTot)) 
 ```
 
+<br>
+
 #### 1980
 
 ```{r Tables Same/Within 80, message=FALSE, results="asis"}
@@ -483,6 +513,8 @@ knitr::kable(seg_D %>%
             propWithin_05 = nWithin_05/nTot)) 
 ```
 
+<br>
+
 #### 1990
 
 ```{r Tables Same/Within 90, message=FALSE, results="asis"}
@@ -500,6 +532,8 @@ knitr::kable(seg_D %>%
             propWithin_01 = nWithin_01/nTot,
             propWithin_05 = nWithin_05/nTot)) 
 ```
+
+<br>
 
 #### 2000
 
