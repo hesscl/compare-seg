@@ -202,9 +202,9 @@ ncdb_NE <- left_join(ncdb_NE %>% filter(STATE %in% c("09", "23", "25", "33", "44
 ncdb_NE <- left_join(ncdb_NE %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")),
                      msa1990 %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")))
 
-ncdb_NE <- left_join(ncdb_NE %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")),
+ncdb_NE <- left_join(ncdb_NE %>%  filter(STATE %in% c("09", "23", "25", "33", "44", "50")),
                      msa2000 %>% filter(STATE %in% c("09", "23", "25", "33", "44", "50")))
-
+                                                          
 #join NE and non-NE tables together
 ncdb_cw <- bind_rows(ncdb_nonNE, ncdb_NE) %>%
   arrange(STATE, COUNTY)
@@ -291,11 +291,13 @@ After computing individual tables with MSA codes and dissimilarity we join the h
 #compute crosswalk table of counties according to the 
 seg_cw_NE <- ncdb_cw %>%
   mutate(NEWENG = STATE %in% c("09", "23", "25", "33", "44", "50")) %>%
+  filter(!(is.na(MSA70) & is.na(MSA80) & is.na(MSA90) & is.na(MSA00))) %>% #is not all NAs for historical (micropolitan)
   filter(NEWENG) %>%
   distinct(STATE, COUNTY, COUSUB, MSA70, MSA80, MSA90, MSA00, CBSA, NEWENG)
 
 seg_cw_nonNE <- ncdb_cw %>%
   mutate(NEWENG = STATE %in% c("09", "23", "25", "33", "44", "50")) %>%
+  filter(!(is.na(MSA70) & is.na(MSA80) & is.na(MSA90) & is.na(MSA00))) %>% #is not all NAs for historical (micropolitan)
   filter(!NEWENG) %>%
   mutate(COUSUB = NA) %>% #remove variation in this to allow
   distinct(STATE, COUNTY, COUSUB, MSA70, MSA80, MSA90, MSA00, CBSA, NEWENG)
@@ -331,15 +333,10 @@ cbsa_sum <- seg_D %>%
   mutate(prop70 = nMSA70/nCBSA,
          prop80 = nMSA80/nCBSA,
          prop90 = nMSA90/nCBSA,
-         prop00 = nMSA00/nCBSA,
-         micro = (nMSA70 + nMSA80 + nMSA90 + nMSA00) == 0) #if county is not associated with metro area code through 70-00, must be micropolitan MSA cty added in 2010
+         prop00 = nMSA00/nCBSA) #if county is not associated with metro area code through 70-00, must be micropolitan MSA cty added in 2010
 
 #join summaries about each CBSA's counties back to seg_D by each county's CBSA code
 seg_D <- left_join(seg_D, cbsa_sum)
-
-#set filter for time (i.e. same MSAs across time or add in by decade)
-seg_D <- seg_D %>%
-  filter(!micro) #keep counties in CBSAs that had at least one county in the equivalent 1970 MSA
 
 #spruce up indicator for county subdivisions in NE states
 seg_D$NEWENG <- factor(seg_D$NEWENG)
@@ -356,7 +353,7 @@ levels(seg_D$NEWENG) <- c("Outside N.E.", "New England")
 
 ```{r Tables Prop Cty 70, message=FALSE, results="asis"}
 cbsa_sum %>%
-  filter(!micro, nMSA70 > 0) %>%
+  filter(nMSA70 > 0) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop70) %>%
   skim() %>%
@@ -369,7 +366,7 @@ cbsa_sum %>%
 
 ```{r Tables Prop Cty 80, message=FALSE, results="asis"}
 cbsa_sum %>%
-  filter(!micro, nMSA80 > 0) %>%
+  filter(nMSA80 > 0) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop80) %>%
   skim() %>%
@@ -382,7 +379,7 @@ cbsa_sum %>%
 
 ```{r Tables Prop Cty 90, message=FALSE, results="asis"}
 cbsa_sum %>%
-  filter(!micro, nMSA90 > 0) %>%
+  filter(nMSA90 > 0) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop90) %>%
   skim() %>%
@@ -395,7 +392,7 @@ cbsa_sum %>%
 
 ```{r Tables Prop Cty 00, message=FALSE, results="asis"}
 cbsa_sum %>%
-  filter(!micro, nMSA00 > 0) %>%
+  filter(nMSA00 > 0) %>%
   group_by(NEWENG) %>%
   select(NEWENG, prop00) %>%
   skim() %>%
