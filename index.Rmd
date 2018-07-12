@@ -120,7 +120,7 @@ primary <- c("Blue", "Red", "Yellow")
 
 There are two main features of the geoprocessing we need to do. First, we use `gCentroid()` from `rgeos` to compute each tract's centroid according to the 2010 Census Tract shapefile we loaded. Once we initialize a `SpatialPointsDataFrame` where each set of coordinates corresponds to a unique tract, we use `over()` from the `sp` library (a dependency of `rgdal` and `rgeos`) to intersect each census tract point with the various MSA boundaries used from 1970-2000.
 
-After computing the point-in-polygon intersections, we compile a table of tract IDs and any MSA boundaries the tract's centroid fell within. For 1990 and 2000 we use a conditional approach to identifying a tract's MSA. If a tract was in a _Primary Metropolitan Statistical Area (PMSA)_ we use that, otherwise we use the code found in the combined "MSA/CMSA Code" field of the CMSA90 and CMSA00 shapefiles. So if a tract was part of a _consolidated metropolitan statistical area_ made up of multiple PMSAs, we use the lower-level PMSA code. Otherwise the CMSA code denotes a regular MSA which we use as the tract's MSA value.
+After computing the point-in-polygon intersections, we compile a table of tract IDs and the MSA boundaries the tract's centroid fell within. If a tract did not fall within a boundary these measures take a value of `NA`. For 1990 and 2000 we use a conditional approach to identifying a tract's MSA. If a tract was in a _Primary Metropolitan Statistical Area (PMSA)_ we use that, otherwise we use the code found in the combined "MSA/CMSA Code" field of the CMSA90 and CMSA00 shapefiles. So if a tract was part of a _Consolidated Metropolitan Statistical Area (CMSA)_ made up of multiple PMSAs, we use the lower-level PMSA code. Otherwise the CMSA code denotes a regular MSA which we use as the tract's MSA value.
 
 ```{r}
 centroids <- tract2010_shp@data
@@ -166,7 +166,11 @@ centroids <- bind_cols(centroids@data, SMSA70, SMSA80, CMSA90, PMSA90, CMSA00, P
 
 ## Compute Dissimilarity Indices
 
-At this point we can almost compute the segregation measures. However, since we want non-Hispanic black and non-Hispanic white counts as the two population groups we need to pull our work from the `ncdb_cw` object created from our vanilla NCDB table. We do this by extracting a tract-level table of tract, state, county, place, county subdivision and time-varying MSA IDs. This lets us merge time-varying MSA geography onto our interpolated NCDB where we also have non-Hispanic black and non-Hispanic white counts back till 1970 (obtained via allocation using Hispanic person count). 
+At this point we can almost compute the segregation measures. However, since we want non-Hispanic black and non-Hispanic white counts as the two population groups we need to create a comparable tract ID field for the NHGIS tract centroid table. The field `GEOID10` from NHGIS always has a length of 11 characters, but the NCDB counterpart `GEO2010` varies between 10 and 11 based on how many digits the state code is. 
+
+Fixing the difference in the string format boils down to padding the state and county components of the tract ID with 0s such that the pasted tract ID has 11 characters regardless of whether the state is 1 or 51. For the 6 digit tract component of the `GEOID10` we need to improvise a little since the NCDB does not provide the necessary field on its own. The final 6 digits of a tract FIPS code are the tract component, so the end of the pasted GEOID10 field we `mutate()` grabs either positions 5-10 or 6-10 of the `GEO2010` field based on the two character lengths that exist in `GEO2010`.
+
+The spatially-matched table of tract centroids with MSA values joins to the NCDB for 99.6% of its tracts. The remaining unmatched tracts in the NCDB have "99000" tract codes and exist in counties where the NHGIS shapefile does not possess such tracts (i.e. does not seem to be a simple string formatting issue).
 
 ```{r Transfer NCDB IDs, warning=FALSE}
 #need to construct GEOID10 to have same str structure as NHGIS
@@ -202,7 +206,9 @@ Computing the dissimilarity index takes four piped functions. Starting with the 
 
 1. `filter(!is.na(MSAXX))` - remove tracts that don't exist within the selected boundary
 2. `group_by(MSAXX)` - group tracts by the selected boundary
-3. `summarize(MSAXX_D_19XX = * sum(abs(tnhbt1970/sum(tnhbt1970) - tnhwt1970/sum(tnhwt1970))))` - summarize each MSA's segregation as $$\frac{1}{2} \times \sum_{i=1}^{N}{|\frac{\textrm{black}_{i}}{\textrm{black}_{metro}}-\frac{\textrm{white}_{i}}{\textrm{white}_{metro}}}|$$ where i are tracts and there are N per MSA grouping. The denominator terms (e.g. `sum(tnhbt1970)`) are group-wise (as in MSA) sums of tract counts for a population group at a given time. These expressions evaluate to the $\textrm{black}_{metro}$ and $\textrm{white}_{metro}$ values needed for computing D.
+3. `summarize(MSAXX_D_19XX = * sum(abs(tnhbt1970/sum(tnhbt1970) - tnhwt1970/sum(tnhwt1970))))` 
+  + summarize each MSA's segregation as $$\frac{1}{2} \times    \sum_{i=1}^{N}{|\frac{\textrm{black}_{i}}{\textrm{black}_{metro}}-\frac{\textrm{white}_{i}}{\textrm{white}_{metro}}}|$$ where i are tracts and there are N per MSA grouping. 
+  + The denominator terms (e.g. `sum(tnhbt1970)`) are group-wise (as in MSA) sums of tract counts for a population group at a given time. These expressions evaluate to the $\textrm{black}_{metro}$ and $\textrm{white}_{metro}$ values needed for computing D.
 4. `mutate_at()`- this is mutating the column made via summarize to recode as `NA` in the places where division by zero took place (creates `NaN` instead).
 
 For the historical delineations we only compute the contemporaneous measure. For the 2010 CBSA definition, we compute measures of dissmilarity for 1970-2000.
@@ -260,10 +266,6 @@ After computing individual tables with MSA codes and dissimilarity values we nee
 
 Within New England there is variation within counties but elsewhere the data only vary by unique counties and can be safely collapsed. So for all analyses that follow there is a difference in units of analysis between New England and the rest of the US. 
 
-A case outside of NE uniquely identifies a county in a given state and has the appropriate spatially matched MSA codes for each census period. It is best to think of the analyses outside of NE as related to counties, the share of counties that are in a historical MSA and also in a CBSA, correlation between a county's matched dissimilarity values between two MSA definitions, etc.
-
-A case in NE represents a unique city, town, Census Designated Place or unincoporated county subdivision. These lower-level areal summaries are required given that there can be two MSA codes for a given county in New England. It is best to think of analyses in NE as showing the share of city/town/suburbs within a given MSA vs CBSA delineation, the correlation between a city/town/suburb's matched dissmilarity values between two MSA definitions, etc.
-
 ```{r Compile seg_D}
 #compute crosswalk table of counties according to the 
 seg_cw_NE <- ncdb %>%
@@ -284,9 +286,6 @@ seg_cw_nonNE <- ncdb %>%
 
 seg_cw <- bind_rows(seg_cw_NE, seg_cw_nonNE)
 
-#save crosswalk file to storage
-write_csv(seg_cw, "./output/county_msa_cbsa_crosswalk.csv")
-
 #append segregation measures by CBSA values
 seg_D <- left_join(seg_cw, seg_2010cbsa)  
 seg_D <- left_join(seg_D, seg_2000msa)
@@ -300,6 +299,14 @@ seg_D <- left_join(seg_D, seg_1970msa)
 <br>
 
 ## Analyze measurement differences
+
+### A note about units of analysis
+
+A case outside of NE uniquely identifies a county in a given state and has the appropriate spatially matched MSA codes for each census period. It is best to think of the analyses outside of NE as related to counties, the share of counties that are in a historical MSA and also in a CBSA, correlation between a county's matched dissimilarity values between two MSA definitions, etc.
+
+A case in NE represents a unique city, town, Census Designated Place or unincoporated county subdivision. These lower-level areal summaries are required given that there can be two MSA codes for a given county in New England. It is best to think of analyses in NE as showing the share of city/town/suburbs within a given MSA vs CBSA delineation, the correlation between a city/town/suburb's matched dissmilarity values between two MSA definitions, etc.
+
+### Counts of units within MSAs / CBSAs
 
 The first step of the analysis will be to take some summary statistics about the counties / sub-county units in the MSA or CBSA at a given point in time. These counts will be used to measure the ratio of counties / sub-county units in historical MSA definitions compare to CBSA definitions. 
 
@@ -339,6 +346,8 @@ seg_D <- left_join(seg_D, msa_sum_90)
 seg_D <- left_join(seg_D, msa_sum_00)
 seg_D <- left_join(seg_D, cbsa_sum)
 
+write_csv(seg_D, "./output/county_msa_cbsa_crosswalk.csv")
+
 #make NEWENG levels clearer
 seg_D$NEWENG <- factor(seg_D$NEWENG) 
 levels(seg_D$NEWENG) <- c("Outside N.E.", "New England") # c(FALSE, TRUE)
@@ -348,7 +357,7 @@ levels(seg_D$NEWENG) <- c("Outside N.E.", "New England") # c(FALSE, TRUE)
 <hr>
 <br>
 
-### Ratio of N Counties MSA / N Counties CBSA
+### Ratio of N Units MSA / N Units CBSA
 
 This analysis takes the table of counties and counties / sub-county units and tries to understand the share of historical MSAs within present-day CBSAs. 
 
@@ -429,10 +438,11 @@ seg_D %>%
 #### 1970
 
 ```{r Tables Cor 70, message=FALSE, results="asis"}
-knitr::kable(seg_D %>% 
+seg_D %>% 
   filter(!is.na(MSA70), tpopm1970 > 50000) %>%
   group_by(NEWENG) %>% 
-  summarize(cor70 = cor(MSA70_D_1970, CBSA_D_1970, use = "complete.obs")))
+  summarize(cor70 = cor(MSA70_D_1970, CBSA_D_1970, use = "complete.obs")) %>%
+  knitr::kable()
 ```
 
 <br>
@@ -440,10 +450,11 @@ knitr::kable(seg_D %>%
 #### 1980
 
 ```{r Tables Cor 80, message=FALSE, results="asis"}
-knitr::kable(seg_D %>% 
+seg_D %>% 
   filter(!is.na(MSA80), tpopm1980 > 50000) %>%
   group_by(NEWENG) %>% 
-  summarize(cor80 = cor(MSA80_D_1980, CBSA_D_1980, use = "complete.obs")))
+  summarize(cor80 = cor(MSA80_D_1980, CBSA_D_1980, use = "complete.obs")) %>% 
+  knitr::kable()
 ```
 
 <br>
@@ -451,10 +462,11 @@ knitr::kable(seg_D %>%
 #### 1990
 
 ```{r Tables Cor 90, message=FALSE, results="asis"}
-knitr::kable(seg_D %>% 
+seg_D %>% 
   filter(!is.na(MSA90), tpopm1990 > 50000) %>%
   group_by(NEWENG) %>% 
-  summarize(cor90 = cor(MSA90_D_1990, CBSA_D_1990, use = "complete.obs")))
+  summarize(cor90 = cor(MSA90_D_1990, CBSA_D_1990, use = "complete.obs")) %>%
+  knitr::kable()
 ```
 
 <br>
@@ -462,10 +474,11 @@ knitr::kable(seg_D %>%
 #### 2000
 
 ```{r Tables Cor 10, message=FALSE, results="asis"}
-knitr::kable(seg_D %>% 
+seg_D %>% 
   filter(!is.na(MSA00), tpopm2000 > 50000) %>%
   group_by(NEWENG) %>% 
-  summarize(cor00 = cor(MSA00_D_2000, CBSA_D_2000, use = "complete.obs")))
+  summarize(cor00 = cor(MSA00_D_2000, CBSA_D_2000, use = "complete.obs")) %>%
+  knitr::kable()
 ```
 
 <br>
@@ -474,7 +487,7 @@ knitr::kable(seg_D %>%
 
 ### Summary statistics of D distributions
 
-This section shows a county-level analysis (counties / sub-county units for New England) of the black-white dissimilarity distribution under different delineations. A county must exist within a historical boundary to appear in a given summary computation. Like before, all comparisons are for counties among metropolitan areas as would be defined by either delineation at the given time point.
+This section shows a county-level analysis (sub-county units for New England) of the black-white dissimilarity distribution under different delineations. A county must exist within a historical boundary to appear in a given summary computation. Like before, all comparisons are for counties among metropolitan areas as would be defined by either delineation at the given time point.
 
 #### 1970
 
@@ -537,7 +550,7 @@ This counties / sub-county units analysis quantifies the absolute amount of disa
 #### 1970
 
 ```{r Tables Same/Within 70, message=FALSE, results="asis"}
-knitr::kable(seg_D %>% 
+seg_D %>% 
   filter(!is.na(MSA70_D_1970), !is.na(CBSA_D_1970), tpopm1970 >= 50000) %>% #need to filter out the NAs created by division by 0 in CBSA col
   mutate(same = MSA70_D_1970 == CBSA_D_1970,            #there are CBSAs with no population coverage in 1970 
          within_01 = abs(MSA70_D_1970 - CBSA_D_1970) < .01,
@@ -549,7 +562,8 @@ knitr::kable(seg_D %>%
             nTot = n(),
             propSame = nSame/nTot,
             propWithin_01 = nWithin_01/nTot,
-            propWithin_05 = nWithin_05/nTot)) 
+            propWithin_05 = nWithin_05/nTot) %>%
+  knitr::kable()
 ```
 
 <br>
@@ -557,7 +571,7 @@ knitr::kable(seg_D %>%
 #### 1980
 
 ```{r Tables Same/Within 80, message=FALSE, results="asis"}
-knitr::kable(seg_D %>% 
+seg_D %>% 
   filter(!is.na(MSA80_D_1980), tpopm1980 >= 50000) %>%
   mutate(same = MSA80_D_1980 == CBSA_D_1980,
          within_01 = abs(MSA80_D_1980 - CBSA_D_1980) < .01,
@@ -569,7 +583,8 @@ knitr::kable(seg_D %>%
             nTot = n(),
             propSame = nSame/nTot,
             propWithin_01 = nWithin_01/nTot,
-            propWithin_05 = nWithin_05/nTot)) 
+            propWithin_05 = nWithin_05/nTot) %>%
+  knitr::kable()
 ```
 
 <br>
@@ -577,7 +592,7 @@ knitr::kable(seg_D %>%
 #### 1990
 
 ```{r Tables Same/Within 90, message=FALSE, results="asis"}
-knitr::kable(seg_D %>% 
+seg_D %>% 
   filter(!is.na(MSA90_D_1990), tpopm1990 > 50000) %>%
   mutate(same = MSA90_D_1990 == CBSA_D_1990,
          within_01 = abs(MSA90_D_1990 - CBSA_D_1990) < .01,
@@ -589,7 +604,8 @@ knitr::kable(seg_D %>%
             nTot = n(),
             propSame = nSame/nTot,
             propWithin_01 = nWithin_01/nTot,
-            propWithin_05 = nWithin_05/nTot)) 
+            propWithin_05 = nWithin_05/nTot) %>%
+  knitr::kable()
 ```
 
 <br>
@@ -597,7 +613,7 @@ knitr::kable(seg_D %>%
 #### 2000
 
 ```{r Tables Same/Within 00, message=FALSE, results="asis"}
-knitr::kable(seg_D %>% 
+seg_D %>% 
   filter(!is.na(MSA00_D_2000), tpopm2000 > 50000) %>%
   mutate(same = MSA00_D_2000 == CBSA_D_2000,
          within_01 = abs(MSA00_D_2000 - CBSA_D_2000) < .01,
@@ -609,7 +625,8 @@ knitr::kable(seg_D %>%
             nTot = n(),
             propSame = nSame/nTot,
             propWithin_01 = nWithin_01/nTot,
-            propWithin_05 = nWithin_05/nTot)) 
+            propWithin_05 = nWithin_05/nTot) %>%
+  knitr::kable()
 ```
 
 <br>
@@ -647,7 +664,7 @@ ggplot(seg_D %>% filter(!is.na(MSA70_D_1970), !is.na(CBSA_D_1970), tpopm1970 >= 
 #### 1980
 
 ```{r Visualization 1980, echo=FALSE, warning=FALSE, fig.width=6, fig.height=3, dpi=300}
-ggplot(seg_D %>% filter(!is.na(MSA80_D_1980), tpopm1980 >= 50000),
+ggplot(seg_D %>% filter(!is.na(MSA80_D_1980), !is.na(CBSA_D_1980), tpopm1980 >= 50000),
        aes(x = MSA80_D_1980, y = CBSA_D_1980)) +
   facet_grid(~ NEWENG) +
   geom_hex() +
@@ -668,7 +685,7 @@ ggplot(seg_D %>% filter(!is.na(MSA80_D_1980), tpopm1980 >= 50000),
 #### 1990
 
 ```{r Visualization 1990, echo=FALSE, warning=FALSE, fig.width=6, fig.height=3, dpi=300}
-ggplot(seg_D %>% filter(!is.na(MSA90_D_1990), tpopm1990 >= 50000), 
+ggplot(seg_D %>% filter(!is.na(MSA90_D_1990), !is.na(CBSA_D_1990), tpopm1990 >= 50000), 
        aes(x = MSA90_D_1990, y = CBSA_D_1990)) +
   facet_grid(~ NEWENG) +
   geom_hex() +
@@ -689,7 +706,7 @@ ggplot(seg_D %>% filter(!is.na(MSA90_D_1990), tpopm1990 >= 50000),
 #### 2000
 
 ```{r Visualization 2000, echo=FALSE, warning=FALSE, fig.width=6, fig.height=3, dpi=300}
-ggplot(seg_D %>% filter(!is.na(MSA00_D_2000), tpopm2000 >= 50000), 
+ggplot(seg_D %>% filter(!is.na(MSA00_D_2000), !is.na(CBSA_D_1980), tpopm2000 >= 50000), 
        aes(x = MSA00_D_2000, y = CBSA_D_2000)) +
   facet_grid(~ NEWENG) +
   geom_hex() +
