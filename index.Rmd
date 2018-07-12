@@ -1,5 +1,5 @@
 ---
-title: "Comparing Dissmilarity Indices using Current and Historical Metro Definitions"
+title: "Comparing Dissimilarity Indices using Current and Historical Metro Definitions"
 output: 
   html_document:
     toc: true
