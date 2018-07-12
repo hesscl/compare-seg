@@ -377,7 +377,7 @@ centroids &lt;- bind_cols(centroids@data, SMSA70, SMSA80, CMSA90, PMSA90, CMSA00
 <div id="compute-dissimilarity-indices" class="section level2">
 <h2>Compute Dissimilarity Indices</h2>
 <p>At this point we can almost compute the segregation measures. However, since we want non-Hispanic black and non-Hispanic white counts as the two population groups we need to create a comparable tract ID field for the NHGIS tract centroid table. The field <code>GEOID10</code> from NHGIS always has a length of 11 characters, but the NCDB counterpart <code>GEO2010</code> varies between 10 and 11 based on how many digits the state code is.</p>
-<p>Fixing the difference in the string format boils down to padding the state and county components of the tract ID with 0s such that the pasted tract ID has 11 characters regardless of whether the state is 1 or 51. For the 6 digit tract component of the <code>GEOID10</code> we need to improvise a little since the NCDB does not provide the necessary field on its own. The final 6 digits of a tract FIPS code are the tract component, so the end of the pasted GEOID10 field we <code>mutate()</code> grabs either positions 5-10 or 6-10 of the <code>GEO2010</code> field based on the two character lengths that exist in <code>GEO2010</code>.</p>
+<p>Fixing the difference in the string format boils down to padding the state and county components of the tract ID with 0s such that the pasted tract ID has 11 characters regardless of whether the state is 1 or 51. For the 6 digit tract component of the <code>GEOID10</code> we need to improvise a little since the NCDB does not provide the necessary field on its own. The final 6 digits of a tract FIPS code are the tract component, so the end of the pasted GEOID10 field we <code>mutate()</code> grabs either positions 5-10 or 6-11 of the <code>GEO2010</code> field based on the two character lengths that exist in <code>GEO2010</code>.</p>
 <p>The spatially-matched table of tract centroids with MSA values joins to the NCDB for 99.6% of its tracts. The remaining unmatched tracts in the NCDB have “99000” tract codes and exist in counties where the NHGIS shapefile does not possess such tracts (i.e. does not seem to be a simple string formatting issue).</p>
 <pre class="r"><code>#need to construct GEOID10 to have same str structure as NHGIS
 ncdb_GEOID10 &lt;- ncdb_vanilla %&gt;%
@@ -419,7 +419,7 @@ ncdb &lt;- ncdb %&gt;%
 <ol start="4" style="list-style-type: decimal">
 <li><code>mutate_at()</code>- this is mutating the column made via summarize to recode as <code>NA</code> in the places where division by zero took place (creates <code>NaN</code> instead).</li>
 </ol>
-<p>For the historical delineations we only compute the contemporaneous measure. For the 2010 CBSA definition, we compute measures of dissmilarity for 1970-2000.</p>
+<p>For the historical delineations we only compute the contemporaneous measure. For the 2010 CBSA definition, we compute measures of dissimilarity for 1970-2000.</p>
 <pre class="r"><code>seg_1970msa &lt;- ncdb %&gt;%
   filter(!is.na(MSA70)) %&gt;%
   group_by(MSA70) %&gt;%
@@ -467,7 +467,7 @@ seg_2010cbsa &lt;- ncdb %&gt;%
 #1. tracts with 0 population at t -&gt; CBSAs with 0 population at t
 #2. NAs for tract population at t -&gt; NA for dissimilarity at t</code></pre>
 <p>After computing individual tables with MSA codes and dissimilarity values we need to link the index values across years.</p>
-<p>Within New England there is variation within counties but elsewhere the data only vary by unique counties and can be safely collapsed. So for all analyses that follow there is a difference in units of analysis between New England and the rest of the US.</p>
+<p>Within New England there is variation within counties but elsewhere a unique county may only have one MSA. This means we can safely collapse the units to describe unique counties. So for all analyses that follow there is a difference in units of analysis between New England and the rest of the US.</p>
 <pre class="r"><code>#compute crosswalk table of counties according to the 
 seg_cw_NE &lt;- ncdb %&gt;%
   rename(STATE = state, COUNTY = county) %&gt;%
